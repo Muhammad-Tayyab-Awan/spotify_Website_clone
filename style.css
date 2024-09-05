@@ -7,7 +7,10 @@ body {
   color: white; */
 }
 .navbar {
-  /* background-color: black; */
+  background-color: black;
   height: 10vh;
   width: 100vw;
+}
+.navbar > * {
+  height: 100%;
 }
