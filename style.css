@@ -20,8 +20,10 @@ body {
 .logo > img {
   width: 35%;
 }
-.home-search > * {
-  height: 100%;
+.home-search {
   width: 40%;
   background-color: red;
+}
+.home-search > * {
+  height: 100%;
 }
