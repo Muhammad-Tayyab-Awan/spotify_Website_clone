@@ -7,3 +7,6 @@
 .ic {
   align-items: center;
 }
+.je {
+  justify-content: space-evenly;
+}
