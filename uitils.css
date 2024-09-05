@@ -13,3 +13,6 @@
 .ja {
   justify-content: space-around;
 }
+.jb {
+  justify-content: space-between;
+}
