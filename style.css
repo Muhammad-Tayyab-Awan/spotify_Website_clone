@@ -26,6 +26,9 @@ body {
 }
 .home-search > * {
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .home-search > .home > img {
   width: 10%;
