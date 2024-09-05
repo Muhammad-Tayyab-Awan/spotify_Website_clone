@@ -27,3 +27,6 @@ body {
 .home-search > * {
   height: 100%;
 }
+.home-search > img {
+  width: 35%;
+}
