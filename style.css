@@ -15,9 +15,9 @@ body {
   height: 100%;
 }
 .logo {
-  width: 10%;
+  width: 7%;
   background-color: rebeccapurple;
 }
 .logo > * {
-  width: 35%;
+  width: 25%;
 }
