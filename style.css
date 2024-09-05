@@ -17,9 +17,11 @@ body {
 .logo {
   width: 7%;
 }
-.logo > * {
+.logo > img {
   width: 35%;
 }
-.home-search{
-   
+.home-search > * {
+  height: 100%;
+  width: 40%;
+  background-color: red;
 }
