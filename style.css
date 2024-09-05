@@ -36,6 +36,6 @@ body {
 .home-search > .search > img {
   width: 8%;
 }
-.home-search > .search > input{
-  
+.home-search > .search > input {
+  width: 100%;
 }
