@@ -16,8 +16,7 @@ body {
 }
 .logo {
   width: 7%;
-  background-color: rebeccapurple;
 }
 .logo > * {
-  width: 25%;
+  width: 35%;
 }
