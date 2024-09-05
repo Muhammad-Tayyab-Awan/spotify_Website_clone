@@ -1,0 +1,9 @@
+.df {
+  display: flex;
+}
+.jc {
+  justify-content: center;
+}
+.ic {
+  align-items: center;
+}
