@@ -33,6 +33,11 @@ body {
 .home-search > .home > img {
   width: 10%;
 }
+.home-search .search {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 .home-search > .search > img {
   width: 8%;
 }
