@@ -6,7 +6,8 @@ body {
   /* background-color: black;
   color: white; */
 }
-.navbar{
+.navbar {
   background-color: black;
-  height: 1;
+  height: 10vh;
+  width: 100vw;
 }
