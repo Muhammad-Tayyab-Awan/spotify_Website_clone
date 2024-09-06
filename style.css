@@ -46,10 +46,11 @@ body {
 .home-search .search {
   width: 90%;
   background-color: yellow;
+  justify-content: space-evenly;
 }
 .home-search > .search > img {
   width: 7%;
 }
 .home-search > .search > input {
-  width: 100%;
+  width: 85%;
 }
