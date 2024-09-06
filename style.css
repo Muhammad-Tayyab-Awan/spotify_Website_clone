@@ -47,13 +47,8 @@ body {
   width: 90%;
   background-color: yellow;
 }
-.home-search .search {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
 .home-search > .search > img {
-  width: 8%;
+  width: 7%;
 }
 .home-search > .search > input {
   width: 100%;
