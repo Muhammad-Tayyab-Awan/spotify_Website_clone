@@ -58,10 +58,13 @@ body {
 }
 .home-search > .search > input {
   text-align: center;
-  color: #b3b3b3;
+  color: white;
   border-radius: inherit;
   background-color: #1f1f1f;
   border: none;
   height: 100%;
   width: 85%;
+}
+.home-search > .search > input::placeholder {
+  color: #b3b3b3;
 }
