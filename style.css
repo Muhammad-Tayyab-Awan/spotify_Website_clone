@@ -143,3 +143,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.account_btns .banner .text {
+  width: 85%;
+}
+.acoount-notification .banner .btns {
+  width: 15%;
+}
