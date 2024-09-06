@@ -75,3 +75,6 @@ body {
 .home-search > .search > input::placeholder {
   color: #b3b3b3;
 }
+.home-search > .search > input:focus-visible {
+  outline: none;
+}
