@@ -153,6 +153,7 @@ body {
   flex-direction: column;
   gap: 5px;
   align-items: flex-start;
+  padding-left: 10px;
 }
 .acoount-notification .banner .text p:first-child {
   font-size: small;
