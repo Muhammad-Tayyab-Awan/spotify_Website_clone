@@ -148,7 +148,7 @@ body {
   align-items: center;
 }
 .acoount-notification .banner .text {
-  width: 90%;
+  width: 85%;
   height: 100%;
   flex-direction: column;
   gap: 5px;
@@ -160,7 +160,7 @@ body {
   font-weight: bold;
 }
 .acoount-notification .banner .btns {
-  width: 10%;
+  width: 15%;
   height: 100%;
 }
 .acoount-notification .banner .btns button {
