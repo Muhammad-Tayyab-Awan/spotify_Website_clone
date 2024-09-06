@@ -144,10 +144,9 @@ body {
 }
 .acoount-notification .banner .text {
   width: 90%;
+  height: 100%;
 }
 .acoount-notification .banner .btns {
   width: 10%;
-}
-.acoount-notification .banner .text {
-  
+  height: 100%;
 }
