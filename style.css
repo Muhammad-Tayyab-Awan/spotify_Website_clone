@@ -78,7 +78,7 @@ body {
 .home-search > .search > input:focus-visible {
   outline: none;
 }
-.home-search > .account_btns {
-  width: 20%;
+.navbar > .account_btns {
+  width: 15%;
   background-color: red;
 }
