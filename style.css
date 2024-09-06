@@ -53,8 +53,9 @@ body {
   background-color: #1f1f1f;
   justify-content: space-evenly;
 }
-.home-search > .search img {
-  width: 6%;
+.home-search > .search > label {
+  height: 100%;
+  width: 100%;
 }
 .home-search > .search > input {
   text-align: center;
