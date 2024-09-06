@@ -33,7 +33,7 @@ body {
 .home-search > * {
   height: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 .home-search > .home > img {
