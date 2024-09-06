@@ -163,3 +163,11 @@ body {
   width: 10%;
   height: 100%;
 }
+.acoount-notification .banner .btn button {
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+}
