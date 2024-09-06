@@ -56,6 +56,12 @@ body {
 .home-search > .search > label {
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-search > .search > label img {
+  width: 7%;
 }
 .home-search > .search > input {
   text-align: center;
