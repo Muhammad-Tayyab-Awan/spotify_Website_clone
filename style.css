@@ -33,14 +33,19 @@ body {
 .home-search > * {
   height: 100%;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 .home-search > .home {
   width: 10%;
+  background-color: blue;
 }
 .home-search > .home > img {
   width: 40%;
+}
+.home-search .search {
+  width: 90%;
+  background-color: yellow;
 }
 .home-search .search {
   display: flex;
