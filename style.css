@@ -113,7 +113,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: red;
 }
 .main .left {
   width: 24%;
@@ -125,6 +124,8 @@ body {
   background-color: white;
   width: 74%;
   height: 97%;
+  background-color: #1f1f1f;
+  border-radius: 10px;
 }
 .acoount-notification {
   position: fixed;
