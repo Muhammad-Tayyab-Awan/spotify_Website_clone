@@ -36,8 +36,11 @@ body {
   justify-content: center;
   align-items: center;
 }
-.home-search > .home > img {
+.home-search > .home {
   width: 10%;
+}
+.home-search > .home > img {
+  width: 40%;
 }
 .home-search .search {
   display: flex;
