@@ -38,11 +38,12 @@ body {
 }
 .home-search > .home {
   width: 10%;
-  background-color: #1f1f1f;
-  border-radius: 50%;
 }
 .home-search > .home > img {
-  width: 40%;
+  background-color: #1f1f1f;
+  border-radius: 50%;
+  height: 40%;
+  /* width: 40%; */
 }
 .home-search .search {
   width: 90%;
