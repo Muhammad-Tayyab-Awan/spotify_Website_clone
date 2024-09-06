@@ -123,11 +123,14 @@ body {
   height: 97%;
   background-color: #1f1f1f;
   border-radius: 10px;
+  position: relative;
 }
 .main .left .left-footer {
   height: 40%;
   width: 100%;
   background-color: red;
+  position: absolute;
+  bottom: 0;
   /* background-color: #1f1f1f; */
 }
 .main .right {
