@@ -106,7 +106,7 @@ body {
   width: 48%;
 }
 .main {
-  height: 90vh;
+  height: 80vh;
   width: 100vw;
   display: flex;
   justify-content: space-evenly;
