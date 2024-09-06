@@ -118,7 +118,7 @@ body {
 .main .left {
   width: 24%;
   height: 97%;
-  background-color: white;
+  background-color: #1f1f1f;
 }
 .main .right {
   background-color: white;
@@ -137,7 +137,7 @@ body {
 .acoount-notification .banner {
   height: 92%;
   width: 99%;
-  background: linear-gradient(45deg, #a337a3, #6385e3);
+  background: linear-gradient(90deg, #af2896, #509bf5);
   display: flex;
   align-items: center;
 }
