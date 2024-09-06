@@ -57,6 +57,7 @@ body {
   width: 6%;
 }
 .home-search > .search > input {
+  border-radius: inherit;
   background-color: #1f1f1f;
   border: none;
   height: 100%;
