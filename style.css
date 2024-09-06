@@ -3,8 +3,8 @@
   margin: 0;
 }
 body {
-  /* background-color: black;
-  color: white; */
+  background-color: black;
+  color: white;
 }
 .navbar {
   background-color: black;
@@ -70,6 +70,7 @@ body {
   border: none;
   height: 100%;
   width: 85%;
+  font-size: large;
 }
 .home-search > .search > input::placeholder {
   color: #b3b3b3;
