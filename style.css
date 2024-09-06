@@ -105,3 +105,21 @@ body {
   height: 80%;
   width: 48%;
 }
+.main {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: red;
+}
+.main .left {
+  width: 23%;
+  height: 97%;
+  background-color: white;
+}
+.main .right {
+  background-color: white;
+  width: 73%;
+  height: 97%;
+}
