@@ -129,4 +129,12 @@ body {
   height: 10vh;
   width: 100vw;
   background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.acoount-notification .banner {
+  height: 90%;
+  width: 99%;
+  background-color: rebeccapurple;
 }
