@@ -151,7 +151,12 @@ body {
   width: 90%;
   height: 100%;
   flex-direction: column;
+  gap: 5px;
   align-items: flex-start;
+}
+.acoount-notification .banner .text p:first-child {
+  font-size: small;
+  font-weight: bold;
 }
 .acoount-notification .banner .btns {
   width: 10%;
