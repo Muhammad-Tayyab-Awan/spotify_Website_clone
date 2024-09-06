@@ -57,9 +57,7 @@ body {
   width: 6%;
 }
 .home-search > .search > input {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   color: #b3b3b3;
   border-radius: inherit;
   background-color: #1f1f1f;
