@@ -37,9 +37,9 @@ body {
   align-items: center;
 }
 .home-search > .home {
-  width: 10%;
+  width: 100%;
   background-color: #1f1f1f;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 .home-search > .home > img {
   width: 40%;
