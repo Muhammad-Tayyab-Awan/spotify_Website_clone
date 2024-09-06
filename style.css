@@ -171,7 +171,6 @@ body {
   border-radius: 2rem;
   width: 90%;
   height: 80%;
-  font-size: 1rem;
 }
 .acoount-notification .banner .btns button:focus-visible {
   outline: none;
