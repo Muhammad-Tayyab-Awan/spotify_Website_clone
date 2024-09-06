@@ -84,7 +84,7 @@ body {
 }
 .account_btns .login-btn {
   border-radius: 2rem;
-  font-size: large;
+  font-size: 1.25rem;
   background-color: black;
   font-weight: bold;
   color: white;
@@ -94,7 +94,7 @@ body {
 }
 .account_btns .signup-btn {
   border-radius: 2rem;
-  font-size: large;
+  font-size: 1.5rem;
   background-color: white;
   font-weight: bold;
   color: black;
