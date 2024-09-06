@@ -140,10 +140,10 @@ body {
   width: 99%;
   background-color: rebeccapurple;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
-.account_btns .banner .text {
+.acoount-notification .banner .text {
   width: 85%;
 }
 .acoount-notification .banner .btns {
