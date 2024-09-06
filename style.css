@@ -106,7 +106,7 @@ body {
   width: 48%;
 }
 .main {
-  height: 83vh;
+  height: 80vh;
   width: 100vw;
   display: flex;
   justify-content: space-evenly;
@@ -124,7 +124,8 @@ body {
   height: 97%;
 }
 .acoount-notification {
-  height: 7vh;
+  position: fixed;
+  height: 10vh;
   width: 100vw;
   background-color: blue;
 }
