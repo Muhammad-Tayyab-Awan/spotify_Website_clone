@@ -130,7 +130,6 @@ body {
   bottom: 0px;
   height: 10vh;
   width: 100vw;
-  background-color: blue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,7 +137,7 @@ body {
 .acoount-notification .banner {
   height: 92%;
   width: 99%;
-  background-color: rebeccapurple;
+  background: linear-gradient(#a337a3, #6385e3);
   display: flex;
   align-items: center;
 }
