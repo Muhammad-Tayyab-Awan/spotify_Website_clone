@@ -169,8 +169,9 @@ body {
   background-color: white;
   font-weight: bold;
   border-radius: 2rem;
-  width: 80%;
+  width: 90%;
   height: 80%;
+  font-size: 1rem;
 }
 .acoount-notification .banner .btns button:focus-visible {
   outline: none;
