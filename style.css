@@ -28,7 +28,6 @@ body {
 }
 .home-search {
   width: 40%;
-  background-color: red;
   justify-content: space-evenly;
 }
 .home-search > * {
@@ -79,6 +78,6 @@ body {
   outline: none;
 }
 .navbar > .account_btns {
-  width: 15%;
+  width: 18%;
   background-color: red;
 }
