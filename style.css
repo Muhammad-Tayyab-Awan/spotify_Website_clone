@@ -125,6 +125,7 @@ body {
 }
 .acoount-notification {
   position: fixed;
+  bottom: 0px;
   height: 10vh;
   width: 100vw;
   background-color: blue;
