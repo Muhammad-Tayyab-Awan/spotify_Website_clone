@@ -80,12 +80,25 @@ body {
 .navbar > .account_btns {
   width: 18%;
   background-color: red;
+  justify-content: space-evenly;
 }
 .account_btns .login-btn {
+  border-radius: 2rem;
+  font-size: large;
   background-color: black;
   font-weight: bold;
   color: white;
   border: none;
-  height: 80%;
+  height: 85%;
+  width: 48%;
+}
+.account_btns .signup-btn {
+  border-radius: 2rem;
+  font-size: large;
+  background-color: white;
+  font-weight: bold;
+  color: black;
+  border: none;
+  height: 85%;
   width: 48%;
 }
