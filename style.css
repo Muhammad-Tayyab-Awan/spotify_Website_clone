@@ -134,7 +134,10 @@ body {
   align-items: center;
 }
 .acoount-notification .banner {
-  height: 90%;
+  height: 92%;
   width: 99%;
   background-color: rebeccapurple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
