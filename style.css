@@ -79,7 +79,6 @@ body {
 }
 .navbar > .account_btns {
   width: 18%;
-  background-color: red;
   justify-content: space-evenly;
 }
 .account_btns .login-btn {
@@ -89,7 +88,7 @@ body {
   font-weight: bold;
   color: white;
   border: none;
-  height: 85%;
+  height: 80%;
   width: 48%;
 }
 .account_btns > *:focus-visible {
@@ -102,6 +101,6 @@ body {
   font-weight: bold;
   color: black;
   border: none;
-  height: 85%;
+  height: 80%;
   width: 48%;
 }
