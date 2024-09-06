@@ -119,10 +119,19 @@ body {
   align-items: center;
 }
 .main .left {
+  position: relative;
   width: 24%;
   height: 97%;
   background-color: #1f1f1f;
   border-radius: 10px;
+}
+.main .left .left-footer {
+  height: 40%;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  background-color: red;
+  /* background-color: #1f1f1f; */
 }
 .main .right {
   background-color: white;
