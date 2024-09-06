@@ -81,3 +81,11 @@ body {
   width: 18%;
   background-color: red;
 }
+.account_btns .login-btn {
+  background-color: black;
+  font-weight: bold;
+  color: white;
+  border: none;
+  height: 80%;
+  width: 48%;
+}
