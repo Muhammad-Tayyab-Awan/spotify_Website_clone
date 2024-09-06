@@ -11,7 +11,7 @@ body {
   height: 10vh;
   width: 100vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .navbar > * {
