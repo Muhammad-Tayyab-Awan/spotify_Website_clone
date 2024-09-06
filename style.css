@@ -142,9 +142,16 @@ body {
   display: flex;
   align-items: center;
 }
+.acoount-notification .banner > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .acoount-notification .banner .text {
   width: 90%;
   height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .acoount-notification .banner .btns {
   width: 10%;
