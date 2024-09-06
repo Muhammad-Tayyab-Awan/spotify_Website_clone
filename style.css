@@ -53,7 +53,7 @@ body {
   background-color: #1f1f1f;
   justify-content: space-evenly;
 }
-.home-search > .search > img {
+.home-search > .search img {
   width: 6%;
 }
 .home-search > .search > input {
