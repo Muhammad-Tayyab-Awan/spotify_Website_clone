@@ -119,7 +119,7 @@ body {
   align-items: center;
 }
 .main .left {
-  position: absolute;
+  position:relative;
   width: 24%;
   height: 97%;
   background-color: #1f1f1f;
