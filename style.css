@@ -131,6 +131,10 @@ body {
   background-color: red;
   position: absolute;
   bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   /* background-color: #1f1f1f; */
 }
 .main .right {
