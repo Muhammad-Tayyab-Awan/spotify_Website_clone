@@ -271,6 +271,7 @@ body {
   width: 18%;
   margin: 0.5rem;
   display: flex;
+  background-color: red;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
@@ -278,7 +279,7 @@ body {
 }
 .card > * {
   margin: 0.75rem 0;
-  width: 100%;
+  width: 90%;
 }
 .card img {
   border-top-right-radius: inherit;
