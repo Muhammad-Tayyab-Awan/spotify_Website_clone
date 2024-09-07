@@ -20,7 +20,7 @@ async function main() {
     let songItem = document.createElement("div");
     songItem.classList.add("songCard");
     songItem.innerHTML = song.split("/")[song.split("/").length - 1];
-    songList.appe;
+    songList.in;
   }
 }
 main();
