@@ -17,5 +17,6 @@ async function main() {
   let songs = await getSongs();
   var s1 = new Audio(songs[1]);
   s1.play();
+  console.log(s1.controls);
 }
 main();
