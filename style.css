@@ -208,8 +208,6 @@ body {
   position: absolute;
   top: 0;
   background-color: #1f1f1f;
-  border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit;
 }
 .left .libraries .libraryHead > * {
   height: 55%;
