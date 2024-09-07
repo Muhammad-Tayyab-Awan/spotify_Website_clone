@@ -293,5 +293,6 @@ body {
   text-align: justify;
 }
 .card i {
+  font-size: 2rem;
   color: #5ef54e;
 }
