@@ -186,9 +186,13 @@ body {
   padding: 1rem 0rem 1rem 0.5rem;
   display: flex;
   justify-content: space-evenly;
+  gap: 10px;
   align-items: center;
 }
-.songCard p:first-child {
+.playNow {
+  font-size: x-small;
+}
+.songName {
   font-size: smaller;
 }
 .left .libraries .libraryHead > * {
