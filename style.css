@@ -183,24 +183,20 @@ body {
   height: auto;
   border-radius: 10px;
   background-color: #888;
-  padding: 1rem 0rem 1rem 0.5rem;
+  padding: 1rem 0.5rem;
   display: flex;
   justify-content: space-between;
-  gap: 10px;
   align-items: center;
 }
 .songCard > i {
-  height: 100%;
   width: 5%;
   font-size: small;
 }
 .playNow {
   width: 5%;
-  height: 100%;
   font-size: small;
 }
 .songName {
-  height: 100%;
   font-size: smaller;
 }
 .left .libraries .libraryHead > * {
