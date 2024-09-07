@@ -194,7 +194,8 @@ body {
 .acoount-notification .banner .btns button:focus-visible {
   outline: none;
 }
-.left .libraries {
+.l
+.left .libraryHead {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
