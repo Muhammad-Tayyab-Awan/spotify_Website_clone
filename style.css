@@ -207,7 +207,7 @@ body {
   align-items: center;
   position: absolute;
   top: 0;
-  background-color: red;
+  background-color: #292727;
 }
 .left .libraries .libraryHead > * {
   height: 55%;
