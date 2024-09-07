@@ -19,7 +19,7 @@ async function main() {
   for (const song of songs) {
     let songItem = document.createElement("div");
     songItem.classList.add("songCard");
-    songItem.innerHTML = song.split("/songs/")[1].replaceAll("%20", "");
+    songItem.innerHTML = song.split("/songs/")[1].replaceAll("%20", " ");
     songList.prepend(songItem);
   }
 }
