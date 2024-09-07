@@ -292,3 +292,6 @@ body {
   border-bottom-left-radius: inherit;
   text-align: justify;
 }
+.card i {
+  color: #5ef54e;
+}
