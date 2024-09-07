@@ -19,7 +19,7 @@ async function main() {
   for (const song of songs) {
     let songItem = document.createElement("li");
     songItem.classList.add("songCard");
-    songItem.innerText = song.split("/")[song.split("/").length - 1];
+    songItem.innerHTML = song.split("/")[song.split("/").length - 1];
     songList.append(songItem);
   }
 }
