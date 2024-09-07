@@ -257,12 +257,14 @@ body {
 }
 /* Playbar */
 
-.playbar {
+.playBar {
   background-color: rebeccapurple;
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 10%;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
 }
 
 /* Playbar */
