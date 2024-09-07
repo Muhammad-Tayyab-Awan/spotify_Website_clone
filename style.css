@@ -187,6 +187,7 @@ body {
   align-items: center;
   word-wrap: normal;
   background-color: #888;
+  text-align: center;
 }
 .left .libraries .libraryHead > * {
   height: 100%;
