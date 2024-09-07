@@ -17,7 +17,7 @@ async function main() {
   let songs = await getSongs();
   let songList = document.querySelector(".songLib");
   for (const song of songs) {
-    let songItem = document.createElement("li");
+    let songItem = document.createElement("div");
     songItem.classList.add("songCard");
     songItem.innerHTML = song.split("/")[song.split("/").length - 1];
     songList.append(songItem);
