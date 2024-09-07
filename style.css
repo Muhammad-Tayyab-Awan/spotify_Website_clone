@@ -276,6 +276,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  border-radius: 8px;
 }
 .card > * {
   margin: 0.75rem 0;
