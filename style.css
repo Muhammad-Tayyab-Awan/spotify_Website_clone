@@ -267,7 +267,6 @@ body {
   align-items: flex-start;
   flex-wrap: wrap;
   overflow: hidden auto;
-  row-gap: 2rem;
 }
 .card {
   width: 18%;
