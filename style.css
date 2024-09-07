@@ -197,6 +197,7 @@ body {
   font-size: small;
 }
 .songName {
+  max-width: 60%;
   font-size: smaller;
 }
 .left .libraries .libraryHead > * {
