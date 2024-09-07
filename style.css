@@ -255,9 +255,9 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 2rem;
 }
 .spotifyPlaylists .cardContainer {
   height: 80%;
   width: 100%;
+  background-color: red;
 }
