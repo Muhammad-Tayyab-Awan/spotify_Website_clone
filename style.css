@@ -214,20 +214,25 @@ body {
   top: 0;
   background-color: #1f1f1f;
 }
+.left .libraries .libraryHead > * {
+  height: 100%;
+  width: 50%;
+}
 .left .libraries .libraryHead .libraryLogo {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 70%;
+}
+.left .libraries .libraryHead .libraryLogo img {
+  height: 50%;
 }
 .left .libraries .libraryHead .adNewLogo {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 30%;
 }
-.left .libraries .libraryHead .libraryLogo img {
-  height: 50%;
-}
-.left .libraries .libraryHead > * {
-  height: 100%;
-  width: 50%;
+.left .libraries .libraryHead .adNewLogo img {
+  height: 30%;
 }
