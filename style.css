@@ -140,12 +140,13 @@ body {
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
 }
-.main .right {
+.right {
   background-color: white;
   width: 74%;
   height: 97%;
   background-color: #1f1f1f;
   border-radius: 10px;
+  position: relative;
 }
 .left .libraries {
   width: 100%;
