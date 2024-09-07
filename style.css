@@ -179,10 +179,10 @@ body {
   overflow: auto;
 }
 .songCard {
-  width: 90%;
+  width: 87%;
   height: 20%;
   border-radius: 10px;
-  background-color: red;
+  background-color: #888;
 }
 .left .libraries .libraryHead > * {
   height: 100%;
