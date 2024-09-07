@@ -282,9 +282,8 @@ body {
   width: 90%;
 }
 .card img {
-  border-top-right-radius: inherit;
-  border-top-left-radius: inherit;
-  margin: 0;
+  margin-top: 0.5rem;
+  border-radius: inherit;
 }
 .card p {
   border-bottom-right-radius: inherit;
