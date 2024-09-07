@@ -194,7 +194,10 @@ body {
 .acoount-notification .banner .btns button:focus-visible {
   outline: none;
 }
-.l
+.left .libraries {
+  width: 100%;
+  height: 70%;
+}
 .left .libraryHead {
   display: flex;
   justify-content: space-evenly;
