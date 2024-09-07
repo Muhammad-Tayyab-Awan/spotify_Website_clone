@@ -134,7 +134,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem 1rem;
+  gap: 2rem 2rem;
   flex-wrap: wrap;
   font-size: 0.75rem;
   /* background-color: #1f1f1f; */
