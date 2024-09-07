@@ -270,8 +270,8 @@ body {
   row-gap: 2rem;
 }
 .card {
-  width: 16%;
-  margin: 1rem;
+  width: 18%;
+  margin: 0.5rem;
   background-color: blue;
   display: flex;
   justify-content: space-evenly;
