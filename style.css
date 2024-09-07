@@ -219,7 +219,9 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-.left .libraries .libraryHead .libraryLogo s
+.left .libraries .libraryHead .libraryLogo svg {
+  width: 10px;
+}
 .left .libraries .libraryHead > * {
   height: 100%;
   width: 50%;
