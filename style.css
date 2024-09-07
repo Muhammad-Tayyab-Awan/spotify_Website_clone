@@ -183,7 +183,7 @@ body {
   height: auto;
   border-radius: 10px;
   background-color: #888;
-  padding: 1rem 0rem 1rem rem;
+  padding: 1rem 0rem 1rem 0.5rem;
 }
 .left .libraries .libraryHead > * {
   height: 100%;
