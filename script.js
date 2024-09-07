@@ -6,8 +6,9 @@ async function getSongs() {
   let songLinks = div.getElementByTagName("a");
   let songs = [];
     for (let i = 0; i < songLinks.length; i++) {
-      songs.push(songLinks[0])
-    const element = songLinks[i];
+    if(songLinks[0].endsWi)
+        songs.push(songLinks[0])
+    
   }
 }
 getSongs();
