@@ -299,4 +299,6 @@ body {
   position: absolute;
   font-size: 2rem;
   color: #1fdf64;
+  width: auto;
+  background-color: black;
 }
