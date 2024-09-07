@@ -137,6 +137,8 @@ body {
   flex-wrap: wrap;
   font-size: 0.75rem;
   background-color: #1f1f1f;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
 }
 .main .right {
   background-color: white;
