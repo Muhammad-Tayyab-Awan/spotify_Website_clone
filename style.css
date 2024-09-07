@@ -208,7 +208,8 @@ body {
   height: 10%;
   width: 100%;
   display: flex;
-  justify-content: space-;
+  justify-content: center;
+  gap: 2rem;
   align-items: center;
   position: absolute;
   top: 0;
