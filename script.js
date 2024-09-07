@@ -3,11 +3,11 @@ async function getSongs() {
   let response = await fetchSongs.text();
   let el = document.createElement("div");
   el.innerHTML = response;
-    let songLinks = div.getElementByTagName("a");
-    let songs = [];
+  let songLinks = div.getElementByTagName("a");
+  let songs = [];
     for (let i = 0; i < songLinks.length; i++) {
-        const element = array[i];
-        
-    }
+      songs.push(songLinks[0])
+    const element = songLinks[i];
+  }
 }
 getSongs();
