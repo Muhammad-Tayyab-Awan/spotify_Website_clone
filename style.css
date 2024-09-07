@@ -166,6 +166,11 @@ body {
   top: 0;
   background-color: #1f1f1f;
 }
+.songLib {
+  width: 100%;
+  height: 90%;
+  background-color: red;
+}
 .left .libraries .libraryHead > * {
   height: 100%;
   width: 50%;
