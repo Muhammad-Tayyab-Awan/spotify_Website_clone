@@ -227,6 +227,9 @@ body {
 .left .libraries .libraryHead .libraryLogo img {
   height: 50%;
 }
+.left .libraries .libraryHead .libraryLogo p {
+  font-weight: bold;
+}
 .left .libraries .libraryHead .adNewLogo {
   display: flex;
   justify-content: center;
