@@ -294,7 +294,7 @@ body {
   text-align: justify;
 }
 .card i {
-  left: 2px;
+  top: 100%;
   position: absolute;
   font-size: 2rem;
   color: #5ef54e;
