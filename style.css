@@ -176,13 +176,14 @@ body {
   align-items: center;
   flex-wrap: wrap;
   row-gap: 1rem;
-  overflow: auto;
+  overflow: hidden auto;
 }
 .songCard {
   width: 87%;
   height: 20%;
   border-radius: 10px;
   background-color: #888;
+  text-align: justify;
 }
 .left .libraries .libraryHead > * {
   height: 100%;
