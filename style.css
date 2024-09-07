@@ -268,6 +268,7 @@ body {
   overflow: hidden auto;
 }
 .card {
+  position: relative;
   width: 18%;
   margin: 0.5rem;
   display: flex;
@@ -293,6 +294,7 @@ body {
   text-align: justify;
 }
 .card i {
+  position: absolute;
   font-size: 2rem;
   color: #5ef54e;
 }
