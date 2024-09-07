@@ -191,10 +191,11 @@ body {
 }
 .songCard > i {
   width: 5%;
+  font-size: smaller;
 }
 .playNow {
   width: 10%;
-  font-size: x-small;
+  font-size: smaller;
 }
 .songName {
   font-size: smaller;
