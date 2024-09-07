@@ -269,7 +269,8 @@ body {
   overflow: hidden auto;
 }
 .card {
-  width: 10%;
+  width: 20%;
+  height: 20%;
   margin: 1rem;
   background-color: blue;
 }
