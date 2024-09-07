@@ -266,7 +266,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  
+  overflow: hidden auto;
 }
 .card {
   margin: 1rem;
