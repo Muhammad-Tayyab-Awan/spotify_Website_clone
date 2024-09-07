@@ -189,6 +189,9 @@ body {
   gap: 10px;
   align-items: center;
 }
+.songCard > i {
+  width: 5%;
+}
 .playNow {
   width: 10%;
   font-size: x-small;
