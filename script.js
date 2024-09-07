@@ -10,6 +10,10 @@ async function getSongs() {
       songs.push(songLinks[i].href);
     }
   }
-  return so
+  return songs;
 }
-getSongs();
+
+async function main() {
+    let songs = getSongs();
+    
+}
