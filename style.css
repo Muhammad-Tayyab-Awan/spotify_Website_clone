@@ -183,18 +183,16 @@ body {
   height: auto;
   border-radius: 10px;
   background-color: #888;
-  padding: 1rem 0.5rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .songCard > i {
   width: 5%;
-  font-size: small;
 }
 .playNow {
   width: 5%;
-  font-size: small;
 }
 .songName {
   max-width: 75%;
