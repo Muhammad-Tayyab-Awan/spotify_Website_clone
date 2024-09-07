@@ -185,6 +185,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  word-wrap: normal;
   background-color: #888;
 }
 .left .libraries .libraryHead > * {
