@@ -256,7 +256,12 @@ body {
 }
 /* Playbar */
 
-
+.playbar {
+  background-color: rebeccapurple;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 
 /* Playbar */
 /* Scrollbars */
