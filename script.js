@@ -18,7 +18,7 @@ async function main() {
   let songList = document.querySelector(".songLib");
   for (const song of songs) {
     let songItem = document.createElement("div");
-    songItem.classList.add("songCard");
+    songItem.innerHTML = 
     songItem.innerHTML = song.split("/songs/")[1].replaceAll("%20", " ");
     songList.prepend(songItem);
   }
