@@ -126,15 +126,15 @@ body {
   position: relative;
 }
 .main .left .left-footer {
-  height: 40%;
+  height: 30%;
   width: 100%;
   background-color: red;
   position: absolute;
   bottom: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   padding-top: 1rem;
-  align-items: flex-start;
+  align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
   font-size: 0.75rem;
