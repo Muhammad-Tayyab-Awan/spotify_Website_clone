@@ -278,6 +278,9 @@ body {
   align-items: center;
   flex-direction: column;
 }
+.card > *{
+  
+}
 .card img {
   width: 90%;
 }
