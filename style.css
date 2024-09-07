@@ -203,10 +203,12 @@ body {
   border-top-right-radius: inherit;
 }
 .left .libraries .libraryHead {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
   height: 10%;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-;
   align-items: center;
   position: absolute;
   top: 0;
