@@ -276,7 +276,9 @@ body {
   flex-direction: column;
   border-radius: 8px;
 }
-.card:ho
+.card:hover {
+  background-color: #474444;
+}
 .card > * {
   width: 90%;
 }
