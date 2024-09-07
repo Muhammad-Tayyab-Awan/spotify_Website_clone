@@ -273,3 +273,6 @@ body {
   margin: 1rem;
   background-color: blue;
 }
+.card img {
+  width: 100%;
+}
