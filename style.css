@@ -219,8 +219,13 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-.left .libraries .libraryHead .libraryLogo svg {
-  width: 10px;
+.left .libraries .libraryHead .adNewLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left .libraries .libraryHead .libraryLogo img {
+  height: 50%;
 }
 .left .libraries .libraryHead > * {
   height: 100%;
