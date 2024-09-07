@@ -266,6 +266,13 @@ body {
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
 }
+.playBarBtns {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
 /* Playbar */
 
