@@ -188,6 +188,9 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
+.songCard p:first-child {
+  font-size: smaller;
+}
 .left .libraries .libraryHead > * {
   height: 100%;
   width: 50%;
