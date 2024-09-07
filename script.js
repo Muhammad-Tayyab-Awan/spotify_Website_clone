@@ -18,4 +18,3 @@ async function main() {
   var s1 = new Audio(songs[0]);
   s1.play();
 }
-main();
