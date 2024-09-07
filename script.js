@@ -23,8 +23,7 @@ async function main() {
               <p class="songName">${song
                 .split("/songs/")[1]
                 .replaceAll("%20", " ")}</p>
-              <p class="playNow">PlayNow</p>
-              <i class="fa-solid fa-circle-play"></i>`;
+              <p class="playNow"><i class="fa-solid fa-circle-play"></i></p>`;
     songList.prepend(songItem);
   }
 }
