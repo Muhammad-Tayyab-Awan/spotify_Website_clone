@@ -273,7 +273,8 @@ body {
   width: 16%;
   margin: 1rem;
   background-color: blue;
-}
-.card img {
-  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
 }
