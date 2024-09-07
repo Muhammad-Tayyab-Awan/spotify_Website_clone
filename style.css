@@ -259,7 +259,11 @@ body {
   align-items: center;
 }
 .spotifyPlaylists .cardContainer {
+  padding: 1rem;
   height: 80%;
   width: 100%;
-  disp
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }
