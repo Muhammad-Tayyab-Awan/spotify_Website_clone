@@ -181,7 +181,7 @@ body {
 .songCard {
   width: 90%;
   height: 20%;
-  b
+  border-radius: 10px;
   background-color: red;
 }
 .left .libraries .libraryHead > * {
