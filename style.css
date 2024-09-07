@@ -264,12 +264,12 @@ body {
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   overflow: hidden auto;
 }
 .card {
+  width: 10%;
   margin: 1rem;
   background-color: blue;
-  
 }
