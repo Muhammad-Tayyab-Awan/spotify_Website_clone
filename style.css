@@ -200,12 +200,15 @@ body {
   background-color: rebeccapurple;
 }
 .left .libraries .libraryHead {
-  height: 20%;
+  height: 10%;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  position: absolute;
+  top: 0;
+  background-color: red;
 }
 .left .libraries .libraryHead > * {
-  height: 35%;
+  height: 50%;
 }
