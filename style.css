@@ -185,7 +185,7 @@ body {
   background-color: #888;
   padding: 1rem 0rem 1rem 0.5rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .left .libraries .libraryHead > * {
