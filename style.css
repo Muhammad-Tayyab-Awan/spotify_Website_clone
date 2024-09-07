@@ -267,6 +267,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 1rem;
 }
 .card {
