@@ -180,9 +180,10 @@ body {
 }
 .songCard {
   width: 87%;
-  height: 20%;
+  height: auto;
   border-radius: 10px;
   background-color: #888;
+  padding: 1rem 0.25rem;
 }
 .left .libraries .libraryHead > * {
   height: 100%;
