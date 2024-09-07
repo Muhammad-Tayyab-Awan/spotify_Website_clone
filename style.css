@@ -271,12 +271,12 @@ body {
   width: 18%;
   margin: 0.5rem;
   display: flex;
-  background-color: red;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   border-radius: 8px;
 }
+.card:ho
 .card > * {
   width: 90%;
 }
