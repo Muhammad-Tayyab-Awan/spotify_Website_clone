@@ -180,7 +180,7 @@ body {
 }
 .songCard {
   width: 87%;
-  height: 20%;
+  height: auto;
   border-radius: 10px;
   background-color: #888;
   padding: 1rem 0rem 1rem 0.5rem;
@@ -190,6 +190,7 @@ body {
   align-items: center;
 }
 .playNow {
+  width: 10%;
   font-size: x-small;
 }
 .songName {
