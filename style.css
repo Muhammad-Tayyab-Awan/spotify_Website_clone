@@ -183,8 +183,6 @@ body {
   height: 20%;
   border-radius: 10px;
   background-color: #888;
-  text-align: justify;
-  overflow: auto;
 }
 .left .libraries .libraryHead > * {
   height: 100%;
