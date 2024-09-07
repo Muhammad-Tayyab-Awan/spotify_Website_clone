@@ -175,7 +175,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  row-gap: 0.25rem;
+  row-gap: 1rem;
   overflow: hidden auto;
 }
 .songCard {
