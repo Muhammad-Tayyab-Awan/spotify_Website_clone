@@ -179,6 +179,7 @@ body {
   overflow: auto;
 }
 .songCard {
+  margin: 1rem;
   width: 80%;
   height: 20%;
   background-color: red;
