@@ -270,6 +270,7 @@ body {
   gap: 1rem;
 }
 .card {
+  margin: 1rem;
   background-color: blue;
   width: 200px;
   height: 200px;
