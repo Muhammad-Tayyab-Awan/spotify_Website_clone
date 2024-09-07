@@ -259,7 +259,6 @@ body {
   align-items: center;
 }
 .spotifyPlaylists .cardContainer {
-  background-color: red;
   height: 80%;
   width: 100%;
   display: flex;
@@ -282,6 +281,8 @@ body {
   margin: 0.75rem 0;
 }
 .card img {
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
   width: 100%;
   margin: 0;
 }
