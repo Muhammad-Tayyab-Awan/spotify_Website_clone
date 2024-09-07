@@ -270,7 +270,7 @@ body {
   align-items: center;
 }
 .playBarBtns {
-  font-size: 1.25rem;
+  font-size: 20px;
   height: 100%;
   width: 40%;
   display: flex;
