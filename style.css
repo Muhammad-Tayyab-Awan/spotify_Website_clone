@@ -228,6 +228,7 @@ body {
   height: 50%;
 }
 .left .libraries .libraryHead .libraryLogo p {
+  color: grey;
   font-weight: bold;
 }
 .left .libraries .libraryHead .adNewLogo {
