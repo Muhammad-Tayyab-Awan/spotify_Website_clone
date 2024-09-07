@@ -6,8 +6,8 @@ async function getSongs() {
   let songLinks = el.getElementsByTagName("a");
   let songs = [];
   for (let i = 0; i < songLinks.length; i++) {
-    if (songLinks[0].href.endsWith(".mp3")) {
-      songs.push(songLinks[0]);
+    if (songLinks[i].href.endsWith(".mp3")) {
+      songs.push(songLinks[i]);
     }
   }
   console.log(songs);
