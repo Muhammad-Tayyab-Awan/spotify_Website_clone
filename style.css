@@ -180,7 +180,7 @@ body {
 }
 .songCard {
   width: 87%;
-  height: auto;
+  height: 20%;
   border-radius: 10px;
   background-color: #888;
   padding: 1rem 0rem 1rem 0.5rem;
