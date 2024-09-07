@@ -132,10 +132,9 @@ body {
   position: absolute;
   bottom: 0;
   display: flex;
-  justify-content: space-evenly;
-  padding-top: 1rem;
+  justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 2rem 1rem;
   flex-wrap: wrap;
   font-size: 0.75rem;
   /* background-color: #1f1f1f; */
