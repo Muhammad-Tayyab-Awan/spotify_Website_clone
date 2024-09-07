@@ -177,6 +177,11 @@ body {
   flex-direction: column;
   overflow: auto;
 }
+.songCard {
+  width: 80%;
+  height: 20%;
+  background-color: red;
+}
 .left .libraries .libraryHead > * {
   height: 100%;
   width: 50%;
