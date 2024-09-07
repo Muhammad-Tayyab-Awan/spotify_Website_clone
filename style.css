@@ -278,7 +278,6 @@ body {
   border-radius: 8px;
 }
 .card > * {
-  margin: 0.75rem 0;
   width: 90%;
 }
 .card img {
@@ -286,6 +285,7 @@ body {
   border-radius: inherit;
 }
 .card p {
+  margin-top: 0.5rem;
   border-bottom-right-radius: inherit;
   border-bottom-left-radius: inherit;
   display: flex;
