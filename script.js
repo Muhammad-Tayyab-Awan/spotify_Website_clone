@@ -16,5 +16,10 @@ async function getSongs() {
 async function main() {
   let songs = await getSongs();
     let songList = document.querySelector(".songLib");
+    for (const song of songs) {
+        let songItem = document.createElement("li");
+        songItem.classList.add("songCard");
+        
+    }
 }
 main();
