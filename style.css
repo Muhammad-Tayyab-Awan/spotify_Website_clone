@@ -311,7 +311,7 @@ body {
   align-items: center;
 }
 .seekBar {
-  width: 90%;
+  width: 60%;
   height: 2px;
   background-color: red;
 }
