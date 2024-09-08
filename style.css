@@ -299,8 +299,8 @@ body {
   border-bottom-right-radius: inherit;
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 .playBarBtns {
   font-size: 1.25rem;
