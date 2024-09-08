@@ -320,7 +320,7 @@ body {
   position: absolute;
   width: 10px;
   height: 10px;
-  top: %;
+  top: -4px;
   left: 0%;
   background-color: white;
 }
