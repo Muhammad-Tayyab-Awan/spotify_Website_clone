@@ -314,7 +314,7 @@ body {
   position: relative;
   width: 60%;
   height: 2px;
-  background-color: red;
+  background-color: #474444;
 }
 .seekBar .circle {
   position: absolute;
