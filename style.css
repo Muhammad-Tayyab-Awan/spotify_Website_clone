@@ -299,6 +299,7 @@ body {
   border-bottom-right-radius: inherit;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 .playBarBtns {
@@ -309,7 +310,11 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
-
+.seekBar {
+  width: 90%;
+  height: 10px;
+  background-color: red;
+}
 /* Playbar */
 
 /* Scrollbars */
