@@ -322,6 +322,7 @@ body {
   height: 10px;
   top: -4px;
   left: 0%;
+  border-radius: 100%;
   background-color: white;
 }
 /* Playbar */
