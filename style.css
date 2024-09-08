@@ -311,11 +311,17 @@ body {
   align-items: center;
 }
 .seekBar {
+  position: relative;
   width: 60%;
   height: 2px;
   background-color: red;
 }
-.seekBar .circle{}
+.seekBar .circle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+}
 /* Playbar */
 
 /* Scrollbars */
