@@ -320,7 +320,8 @@ body {
   position: absolute;
   width: 10px;
   height: 10px;
-  top: 50%;
+  top: %;
+  left: 0%;
   background-color: white;
 }
 /* Playbar */
