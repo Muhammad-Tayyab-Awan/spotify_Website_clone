@@ -81,6 +81,8 @@ const playMusic = (track, pause = false) => {
       currentSong.duration
     );
   });
+  playPause.classList.toggle("fa-circle-play");
+  playPause.classList.add("fa-circle-pause");
   document.querySelector(".songsInfo").innerText = track.split(".")[0];
   if (!pause) {
     currentSong.play();
