@@ -99,6 +99,7 @@ const playMusic = (track, pause = false) => {
 async function getAlbumData(path) {
   let response = fetch(path + "/info.json");
   response = await response.json;
+  console.log(response);
   return response;
 }
 async function getAlbum() {
