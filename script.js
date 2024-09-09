@@ -3,7 +3,7 @@ let playPause = document.querySelector(".play");
 let currAlbum;
 let songs = [];
 async function getSongs() {
-  let fetchSongs = await fetch(`songs/${currAlbum}/`);
+  let fetchSongs = await fetch(`/songs/${currAlbum}/`);
   let response = await fetchSongs.text();
   let el = document.createElement("div");
   el.innerHTML = response;
