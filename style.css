@@ -333,6 +333,7 @@ body {
   width: 60%;
   height: 4px;
   background-color: #474444;
+  cursor: pointer;
 }
 .songsInfo {
   font-size: large;
