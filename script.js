@@ -82,7 +82,7 @@ async function main() {
   });
   let seekBar = document.querySelector(".seekBar");
   seekBar.addEventListener("click", (evt) => {
-    console.log(evt);
+    console.log(evt.x, "+", evt.y);
   });
 }
 main();
