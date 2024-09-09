@@ -109,7 +109,7 @@ async function getAlbum() {
       albums.push(albumLinks[i].href.split("/songs/")[1]);
     }
   }
-  return albums;
+  return {albumsName,albumsData};
 }
 async function main() {
   let albums = await getAlbum();
