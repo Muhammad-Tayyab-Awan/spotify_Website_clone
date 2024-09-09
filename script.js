@@ -23,7 +23,7 @@ function convertSecondsToTime(seconds) {
   return `${paddedMinutes}:${paddedSeconds}`;
 }
 
-const playMusic = (track,) => {
+const playMusic = (track, pause = false) => {
   currentSong.src = "/songs/" + track;
   currentSong.play();
   document.querySelector(".songsInfo").innerText = track.split(".")[0];
@@ -44,7 +44,7 @@ const playMusic = (track,) => {
 
 async function main() {
   let songs = await getSongs();
-  playMusic(songs[0].split("/songs/")[1].replaceAll("%20", " "),true);
+  playMusic(songs[0].split("/songs/")[1].replaceAll("%20", " "), true);
   let songList = document.querySelector(".songLib");
   for (const song of songs) {
     let songItem = document.createElement("div");
