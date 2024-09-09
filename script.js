@@ -22,11 +22,7 @@ const playMusic = (track) => {
   // document.querySelector(".totalDur").innerText = currentSong.duration;
   currentSong.addEventListener("timeupdate", () => {
     console.log(
-      eval(
-        (Math.floor(currentSong.duration) / 60)
-          .toString()
-          .split(".")[1]
-      )
+      (Math.floor(currentSong.duration) / 60).toString().split(".")[1]
     );
   });
   playPause.classList.remove("fa-circle-play");
