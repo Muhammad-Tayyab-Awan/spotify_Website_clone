@@ -130,7 +130,7 @@ async function main() {
     albumCard.setAttribute("data-album", `${e}`);
     albumCard.innerHTML = `<img src="/songs/${e}/cover.jpg" alt="${e}" />
               <i class="fa-solid fa-circle-play"></i>
-              <p>${albums.albumsData.title}</p>`;
+              <p>${albums.albumsData.description}</p>`;
     albumContainer.append(albumCard);
   });
 
