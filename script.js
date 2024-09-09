@@ -97,7 +97,7 @@ const playMusic = (track, pause = false) => {
   }
 };
 async function getAlbumData(path) {
-  let response = await fetch(`songs/${path}/info.json`);
+  let response = await fetch(`/songs/${path}/info.json`);
   let jsonResponse = await response.json();
   return jsonResponse;
 }
