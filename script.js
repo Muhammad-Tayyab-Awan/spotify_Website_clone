@@ -3,7 +3,8 @@ let playPause = document.querySelector(".play");
 let currAlbum;
 let songs = [];
 async function getSongs() {
-  let fetchSongs = await fetch(`songs/${currAlbum}/`);
+  // let fetchSongs = await fetch(`http://127.0.0.1:5500/songs/${currAlbum}/`);
+  let fetchSongs = await fetch(`${window.location.origin}/songs/${currAlbum}/`);
   let response = await fetchSongs.text();
   let el = document.createElement("div");
   el.innerHTML = response;
@@ -27,7 +28,7 @@ async function getSongs() {
     }%`;
   });
 
-  playMusic(decodeURI(songs[0].split(`songs/${currAlbum}/`)[1]), true);
+  playMusic(decodeURI(songs[0].split(`/songs/${currAlbum}/`)[1]), true);
 
   let songList = document.querySelector(".songLib");
   songList.innerHTML = "";
@@ -36,7 +37,7 @@ async function getSongs() {
     songItem.classList.add("songCard");
     songItem.innerHTML = `<i class="fa-solid fa-music"></i>
               <p class="songName">${decodeURI(
-                song.split(`songs/${currAlbum}/`)[1]
+                song.split(`/songs/${currAlbum}/`)[1]
               )}</p>
               <p class="playNow"><i class="fa-solid fa-circle-play"></i></p>`;
     songList.append(songItem);
@@ -97,12 +98,16 @@ const playMusic = (track, pause = false) => {
   }
 };
 async function getAlbumData(path) {
-  let response = await fetch(`songs/${path}/info.json`);
+  // let response = await fetch(`http://127.0.0.1:5500/songs/${path}/info.json`);
+  let response = await fetch(
+    `${window.location.origin}/songs/${path}/info.json`
+  );
   let jsonResponse = await response.json();
   return jsonResponse;
 }
 async function getAlbum() {
-  let albumsFetch = await fetch("songs/");
+  // let albumsFetch = await fetch("http://127.0.0.1:5500/songs/");
+  let albumsFetch = await fetch(`${window.location.origin}/songs/`);
   let response = await albumsFetch.text();
   let el = document.createElement("div");
   el.innerHTML = response;
@@ -110,10 +115,11 @@ async function getAlbum() {
   let albumsName = [];
   let albumsData = [];
   for (let i = 0; i < albumLinks.length; i++) {
-    if (albumLinks[i].href.startsWith("songs/")) {
-      albumsName.push(albumLinks[i].href.split("songs/")[1]);
+    // if (albumLinks[i].href.startsWith("http://127.0.0.1:5500/songs/")) {
+    if (albumLinks[i].href.startsWith(`${window.location.origin}/songs/`)) {
+      albumsName.push(albumLinks[i].href.split("/songs/")[1]);
       albumsData.push(
-        await getAlbumData(albumLinks[i].href.split("songs/")[1])
+        await getAlbumData(albumLinks[i].href.split("/songs/")[1])
       );
     }
   }
@@ -127,7 +133,7 @@ async function main() {
     let albumCard = document.createElement("div");
     albumCard.classList.add("card");
     albumCard.setAttribute("data-album", `${e}`);
-    albumCard.innerHTML = `<div class="cover"><img src="songs/${e}/cover.jpg" alt="${e}" />
+    albumCard.innerHTML = `<div class="cover"><img src="/songs/${e}/cover.jpg" alt="${e}" />
               <i class="fa-solid fa-circle-play"></i>
               </div>
               <p>${albums.albumsData[i].description}</p>`;
@@ -169,7 +175,7 @@ async function main() {
       playMusic(
         decodeURI(
           songs[songs.indexOf(currentSong.src) - 1].split(
-            `songs/${currAlbum}/`
+            `/songs/${currAlbum}/`
           )[1]
         )
       );
