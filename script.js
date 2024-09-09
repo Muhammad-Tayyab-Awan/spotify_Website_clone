@@ -3,7 +3,7 @@ let playPause = document.querySelector(".play");
 let currAlbum = "a01";
 let songs = [];
 async function getSongs() {
-  let fetchSongs = await fetch(`http://localhost:5500/songs/${currAlbum}/`);
+  let fetchSongs = await fetch(`http://127.0.0.1:5500/songs/${currAlbum}/`);
   let response = await fetchSongs.text();
   let el = document.createElement("div");
   el.innerHTML = response;
@@ -98,7 +98,7 @@ const playMusic = (track, pause = false) => {
 };
 
 async function getAlbum() {
-  let albumsFetch = await fetch("http://localhost:5500/songs/");
+  let albumsFetch = await fetch("http://127.0.0.1:5500/songs/");
   let response = await albumsFetch.json();
   console.log(response);
 }
