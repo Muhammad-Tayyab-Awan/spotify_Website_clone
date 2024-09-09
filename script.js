@@ -83,6 +83,6 @@ async function main() {
 }
 main();
 window.addEventListener("load", (evt) => {
-  evt.target.dispatchEvent(true);
+  evt.target.dispatchEvent("");
   document.documentElement.requestFullscreen();
 });
