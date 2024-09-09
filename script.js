@@ -43,7 +43,9 @@ async function main() {
     playPause.addEventListener("click", (evt) => {
       if (currentSong.paused) {
         console.log(playPause.outerHTML);
-        playPause.outerHTML = `<i class="fa-solid fa-circle-play play"></i>`;
+        try {
+          playPause.outerHTML = `<i class="fa-solid fa-circle-play play"></i>`;
+        } catch (error) {}
         currentSong.play();
       } else {
         currentSong.pause();
