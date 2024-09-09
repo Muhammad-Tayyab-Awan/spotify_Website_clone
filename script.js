@@ -81,6 +81,8 @@ async function main() {
     }
   });
   let seekBar = document.querySelector(".seekBar");
-  seekBar.addEventListener()
+  seekBar.addEventListener("click", (evt) => {
+    console.log(evt);
+  });
 }
 main();
