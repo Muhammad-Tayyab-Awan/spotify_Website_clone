@@ -299,7 +299,8 @@ body {
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 0.15rem;
   align-items: center;
   flex-direction: column;
 }
