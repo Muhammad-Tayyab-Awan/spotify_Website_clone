@@ -46,7 +46,7 @@ async function main() {
     }%`;
   });
   let songs = await getSongs();
-  playMusic(songs[0].split("/songs/")[1].replaceAll("%20", " "), true);
+  playMusic(decodeURI(songs[0].split("/songs/")[1]), true);
   let songList = document.querySelector(".songLib");
   for (const song of songs) {
     let songItem = document.createElement("div");
