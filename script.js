@@ -126,8 +126,8 @@ currentSong.addEventListener("timeupdate", () => {
 });
 
 async function main() {
-  let songs = await getSongs();
-
+  await getSongs();
+  
   playMusic(decodeURI(songs[0].split(`/songs/${currAlbum}/`)[1]), true);
 
   let albumCards = document.querySelectorAll(".card");
@@ -136,7 +136,7 @@ async function main() {
     e.addEventListener("click", async (evt) => {
       console.log(evt.currentTarget.dataset.album);
       currAlbum = evt.currentTarget.dataset.album;
-      songs = await getSongs();
+      await getSongs();
     });
   });
 }
