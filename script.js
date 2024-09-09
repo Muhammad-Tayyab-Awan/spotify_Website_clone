@@ -59,8 +59,6 @@ async function getSongs() {
     currentSong.currentTime = (x * currentSong.duration) / 100;
     document.querySelector(".circle").style.left = `${x.toFixed(2)}%`;
   });
-
-  return songs;
 }
 
 function convertSecondsToTime(seconds) {
