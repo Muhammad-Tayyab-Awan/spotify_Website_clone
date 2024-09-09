@@ -115,7 +115,8 @@ async function getAlbum() {
   let albumsName = [];
   let albumsData = [];
   for (let i = 0; i < albumLinks.length; i++) {
-    if (albumLinks[i].href.startsWith("http://127.0.0.1:5500/songs/")) {
+    // if (albumLinks[i].href.startsWith("http://127.0.0.1:5500/songs/")) {
+    if (albumLinks[i].href.startsWith(`${window.location.origin}/songs/`)) {
       albumsName.push(albumLinks[i].href.split("/songs/")[1]);
       albumsData.push(
         await getAlbumData(albumLinks[i].href.split("/songs/")[1])
