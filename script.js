@@ -44,7 +44,7 @@ const playMusic = (track) => {
 
 async function main() {
   let songs = await getSongs();
-  currentSong.src = songs[0];
+  playMusic(songs[0]);
   let songList = document.querySelector(".songLib");
   for (const song of songs) {
     let songItem = document.createElement("div");
@@ -66,10 +66,8 @@ async function main() {
   });
   playPause.addEventListener("click", (evt) => {
     if (currentSong.paused) {
-      console.log(playPause.outerHTML);
       playPause.classList.toggle("fa-circle-pause");
       playPause.classList.toggle("fa-circle-play");
-      console.log(playPause.outerHTML);
       currentSong.play();
     } else {
       currentSong.pause();
