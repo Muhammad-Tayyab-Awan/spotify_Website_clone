@@ -49,8 +49,8 @@ async function main() {
         currentSong.play();
       } else {
         currentSong.pause();
-        playPause.classList.remove("fa-circle-pause");
-        playPause.classList.add("fa-circle-play");
+        playPause.classList.remove("fa-circle-play");
+        playPause.classList.add("fa-circle-pause");
       }
     });
   });
