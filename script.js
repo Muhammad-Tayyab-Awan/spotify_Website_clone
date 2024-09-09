@@ -15,13 +15,21 @@ async function getSongs() {
   return songs;
 }
 
+function convertSecondsToTime(seconds) {
+  const minutes = Math.floor(seconds / 60);
+  const remainingSeconds = seconds % 60;
+  const paddedMinutes = String(minutes).padStart(2, "0");
+  const paddedSeconds = String(remainingSeconds).padStart(2, "0");
+  return `${paddedMinutes}:${paddedSeconds}`;
+}
+
 const playMusic = (track) => {
   currentSong.src = "/songs/" + track;
   currentSong.play();
   document.querySelector(".songsInfo").innerText = track.split(".")[0];
   // document.querySelector(".totalDur").innerText = currentSong.duration;
   currentSong.addEventListener("timeupdate", () => {
-    console.log(currentSong.duration);
+    console.log(convertSecondsToTime(currentSong.duration));
   });
   playPause.classList.remove("fa-circle-play");
   playPause.classList.add("fa-circle-pause");
