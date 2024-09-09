@@ -25,14 +25,13 @@ function convertSecondsToTime(seconds) {
 
 const playMusic = (track, pause = false) => {
   currentSong.src = "/songs/" + track;
-
+  currentSong.addEventListener("load", () => {
+    document.querySelector(".totalDur").innerText = convertSecondsToTime(
+      currentSong.duration
+    );
+  });
   document.querySelector(".songsInfo").innerText = track.split(".")[0];
   if (!pause) {
-    currentSong.addEventListener("timeupdate", () => {
-      document.querySelector(".totalDur").innerText = convertSecondsToTime(
-        currentSong.duration
-      );
-    });
     currentSong.play();
     playPause.classList.remove("fa-circle-play");
     playPause.classList.add("fa-circle-pause");
