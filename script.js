@@ -26,6 +26,6 @@ async function main() {
               <p class="playNow"><i class="fa-solid fa-circle-play"></i></p>`;
     songList.prepend(songItem);
   }
-  
+  document.querySelector(".songList").getEle
 }
 main();
