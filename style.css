@@ -323,7 +323,7 @@ body {
 }
 .songsTime > *:first-child,
 .songsTime > *:last-child {
-  width: auto;
+  width: 6%;
 }
 .seekBar {
   position: relative;
