@@ -105,11 +105,11 @@ async function getAlbum() {
   let albumLinks = el.getElementsByTagName("a");
   let albums = [];
   for (let i = 0; i < albumLinks.length; i++) {
-    if (albumLinks[i].href.startsWith("/songs/a")) {
-      album.push(albumLinks[i].href);
+    if (albumLinks[i].href.startsWith("/songs/")) {
+      albums.push(albumLinks[i].href);
     }
   }
-  console.log(album);
+  console.log(albums);
 }
 async function main() {
   await getSongs();
