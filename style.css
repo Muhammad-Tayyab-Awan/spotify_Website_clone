@@ -305,14 +305,20 @@ body {
 }
 .playBarBtns {
   font-size: 1.25rem;
-  height: 30%;
+  height: 33%;
   width: 40%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background-color: red;
 }
 .playBarBtns > * {
   cursor: pointer;
+}
+.songsTime {
+  background-color: yellow;
+  height: 33%;
+  width: 90%;
 }
 .seekBar {
   position: relative;
@@ -321,7 +327,8 @@ body {
   background-color: #474444;
 }
 .songsInfo {
-  height: 40%;
+  background-color: blue;
+  height: 33%;
   width: 90%;
   display: flex;
   justify-content: center;
