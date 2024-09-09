@@ -44,7 +44,7 @@ const playMusic = (track) => {
 
 async function main() {
   let songs = await getSongs();
-  playMusic(songs[0]);
+  playMusic(songs[0].split("/songs/")[1].replaceAll("%20", " "));
   let songList = document.querySelector(".songLib");
   for (const song of songs) {
     let songItem = document.createElement("div");
