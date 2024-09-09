@@ -14,7 +14,6 @@ async function getSongs() {
       songs.push(songLinks[i].href);
     }
   }
-  return songs;
   let songList = document.querySelector(".songLib");
 
   for (const song of songs) {
