@@ -43,10 +43,10 @@ async function main() {
     playPause.addEventListener("click", (evt) => {
       if (currentSong.paused) {
         currentSong.play();
-        playPause.innerHTML = `<i class="fa-solid fa-circle-play play"></i>`;
+        playPause.outerHTML = `<i class="fa-solid fa-circle-play play"></i>`;
       } else {
         currentSong.pause();
-        playPause.innerHTML = `<i class="fa - solid fa - circle - pause"></i>`;
+        playPause.outerHTML = `<i class="fa - solid fa - circle - pause"></i>`;
       }
     });
   });
