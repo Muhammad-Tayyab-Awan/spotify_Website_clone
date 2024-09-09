@@ -23,7 +23,10 @@ const playMusic = (track) => {
   currentSong.addEventListener("timeupdate", () => {
     console.log(
       eval(
-        (Math.floor(currentSong.duration) / 60).toString().split(".")[1].slice + "*60"
+        (Math.floor(currentSong.duration) / 60)
+          .toString()
+          .split(".")[1]
+          .slice(0, 2) + "*60"
       )
     );
   });
