@@ -28,23 +28,23 @@ const playMusic = (track, pause = false) => {
   if (!pause) {
     currentSong.play();
     document.querySelector(".songsInfo").innerText = track.split(".")[0];
-    currentSong.addEventListener("timeupdate", () => {
-      document.querySelector(".totalDur").innerText = convertSecondsToTime(
-        currentSong.duration
-      );
-      document.querySelector(".currTime").innerText = convertSecondsToTime(
-        currentSong.currentTime
-      );
-      document.querySelector(".circle").style.left = `${
-        (currentSong.currentTime / currentSong.duration) * 100
-      }%`;
-    });
     playPause.classList.toggle("fa-circle-play");
     playPause.classList.toggle("fa-circle-pause");
   }
 };
 
 async function main() {
+  currentSong.addEventListener("timeupdate", () => {
+    document.querySelector(".totalDur").innerText = convertSecondsToTime(
+      currentSong.duration
+    );
+    document.querySelector(".currTime").innerText = convertSecondsToTime(
+      currentSong.currentTime
+    );
+    document.querySelector(".circle").style.left = `${
+      (currentSong.currentTime / currentSong.duration) * 100
+    }%`;
+  });
   let songs = await getSongs();
   playMusic(songs[0].split("/songs/")[1].replaceAll("%20", " "), true);
   let songList = document.querySelector(".songLib");
