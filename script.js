@@ -84,8 +84,8 @@ const playMusic = (track, pause = false) => {
   document.querySelector(".songsInfo").innerText = track.split(".")[0];
   if (!pause) {
     currentSong.play();
-    playPause.classList.remove("fa-circle-play");
-    playPause.classList.add("fa-circle-pause");
+    playPause.classList.toggle("fa-circle-play");
+    playPause.classList.toggle("fa-circle-pause");
   }
 };
 
@@ -95,12 +95,12 @@ async function main() {
   playPause.addEventListener("click", (evt) => {
     if (currentSong.paused) {
       currentSong.play();
-      playPause.classList.add("fa-circle-pause");
-      playPause.classList.remove("fa-circle-play");
+      playPause.classList.toggle("fa-circle-pause");
+      playPause.classList.toggle("fa-circle-play");
     } else {
       currentSong.pause();
-      playPause.classList.add("fa-circle-play");
-      playPause.classList.remove("fa-circle-pause");
+      playPause.classList.toggle("fa-circle-play");
+      playPause.classList.toggle("fa-circle-pause");
     }
   });
 
