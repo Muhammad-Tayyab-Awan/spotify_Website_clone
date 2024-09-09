@@ -3,8 +3,7 @@ let playPause = document.querySelector(".play");
 let currAlbum;
 let songs = [];
 async function getSongs() {
-  // let fetchSongs = await fetch(`http://127.0.0.1:5500/songs/${currAlbum}/`);
-  let fetchSongs = await fetch(`${window.location.origin}/songs/${currAlbum}/`);
+  let fetchSongs = await fetch(`http://127.0.0.1:5500/songs/${currAlbum}/`);
   let response = await fetchSongs.text();
   let el = document.createElement("div");
   el.innerHTML = response;
@@ -98,16 +97,12 @@ const playMusic = (track, pause = false) => {
   }
 };
 async function getAlbumData(path) {
-  // let response = await fetch(`http://127.0.0.1:5500/songs/${path}/info.json`);
-  let response = await fetch(
-    `${window.location.origin}/songs/${path}/info.json`
-  );
+  let response = await fetch(`http://127.0.0.1:5500/songs/${path}/info.json`);
   let jsonResponse = await response.json();
   return jsonResponse;
 }
 async function getAlbum() {
-  // let albumsFetch = await fetch("http://127.0.0.1:5500/songs/");
-  let albumsFetch = await fetch(`${window.location.origin}/songs/`);
+  let albumsFetch = await fetch("http://127.0.0.1:5500/songs/");
   let response = await albumsFetch.text();
   let el = document.createElement("div");
   el.innerHTML = response;
@@ -115,8 +110,7 @@ async function getAlbum() {
   let albumsName = [];
   let albumsData = [];
   for (let i = 0; i < albumLinks.length; i++) {
-    // if (albumLinks[i].href.startsWith("http://127.0.0.1:5500/songs/")) {
-    if (albumLinks[i].href.startsWith(`${window.location.origin}/songs/`)) {
+    if (albumLinks[i].href.startsWith("http://127.0.0.1:5500/songs/")) {
       albumsName.push(albumLinks[i].href.split("/songs/")[1]);
       albumsData.push(
         await getAlbumData(albumLinks[i].href.split("/songs/")[1])
