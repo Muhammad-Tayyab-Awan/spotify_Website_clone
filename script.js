@@ -225,7 +225,7 @@ async function getSongs() {
       }%`;
     });
     console.log(decodeURI(songs[0].split(`/songs/${currAlbum}/`)));
-    playMusic(decodeURI(songs[0].split(`/songs/${currAlbum}/`)[1]), true);
+    playMusic(decodeURI(songs[0].split(`/songs/${currAlbum}/`)), true);
 
     let songList = document.querySelector(".songLib");
     songList.innerHTML = "";
