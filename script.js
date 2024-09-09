@@ -1,6 +1,6 @@
 let currentSong = new Audio();
 let playPause = document.querySelector(".play");
-let currAlbum = "a01";
+let currAlbum;
 let songs = [];
 async function getSongs() {
   let fetchSongs = await fetch(`http://127.0.0.1:5500/songs/${currAlbum}/`);
@@ -106,15 +106,15 @@ async function getAlbum() {
   let albums = [];
   for (let i = 0; i < albumLinks.length; i++) {
     if (albumLinks[i].href.startsWith("http://127.0.0.1:5500/songs/a")) {
-      albums.push(albumLinks[i].href);
+      albums.push(albumLinks[i].href.split("/songs/")[1]);
     }
   }
-  console.log(albums);
+  return albums;
 }
 async function main() {
   await getSongs();
-  await getAlbum();
-
+  let albums = await getAlbum();
+  currAlbum = albums[0];
   playPause.addEventListener("click", (evt) => {
     if (currentSong.paused) {
       currentSong.play();
