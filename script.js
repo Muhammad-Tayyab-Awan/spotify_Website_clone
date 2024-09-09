@@ -321,6 +321,7 @@ async function getAlbum() {
     let el = document.createElement("div");
     el.innerHTML = response;
     let albumLinks = el.getElementsByTagName("a");
+    console.log(albumLinks);
     let albumsName = [];
     let albumsData = [];
     for (let i = 0; i < albumLinks.length; i++) {
