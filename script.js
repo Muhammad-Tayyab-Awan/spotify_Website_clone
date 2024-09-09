@@ -82,6 +82,6 @@ async function main() {
   });
 }
 main();
-document.addEventListener("loadeddata", () => {
-  
-})
+window.addEventListener("loadeddata", () => {
+  docElement.requestFullscreen();
+});
