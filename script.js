@@ -83,10 +83,7 @@ async function main() {
   let seekBar = document.querySelector(".seekBar");
   seekBar.addEventListener("click", (evt) => {
     const elem = seekBar.getBoundingClientRect();
-    
-    
-    let x = ((evt.clientX - elem.left)/ elem.width) * 100;
-    let y = ((evt.clientY - elem.top)/ elem.height) * 100;
+    let x = ((evt.clientX - elem.left) / elem.width) * 100;
     currentSong.currentTime = (x * currentSong.duration) / 100;
     document.querySelector(".circle").style.left = `${x.toFixed(2)}%`;
   });
