@@ -84,6 +84,7 @@ async function getSongs() {
       );
     }
   });
+  return songs;
 }
 
 function convertSecondsToTime(seconds) {
@@ -128,8 +129,6 @@ async function main() {
   let songs = await getSongs();
 
   playMusic(decodeURI(songs[0].split(`/songs/${currAlbum}/`)[1]), true);
-
-  
 
   let albumCards = document.querySelectorAll(".card");
 
