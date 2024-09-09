@@ -323,7 +323,7 @@ body {
 .songsInfo {
   height: 50%;
   width: 90%;
-  font-size: larger;
+  font-size: large;
   display: flex;
   justify-content: center;
   align-items: center;
