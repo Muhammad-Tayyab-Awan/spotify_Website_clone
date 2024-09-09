@@ -120,7 +120,7 @@ async function main() {
   let albumCards = document.querySelectorAll(".card");
   albumCards.forEach((e) => {
     e.addEventListener("click", (evt) => {
-      console.log(evt.target.data.album)
+      console.log(evt.currentTarget.data.album)
     })
   })
 }
