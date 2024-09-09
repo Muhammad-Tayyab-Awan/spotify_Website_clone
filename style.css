@@ -321,10 +321,10 @@ body {
   background-color: #474444;
 }
 .songsInfo {
-  height: 40%;
+  height: 50%;
   width: 90%;
+  font-size: larger;
   display: flex;
-  background-color: red;
   justify-content: center;
   align-items: center;
 }
