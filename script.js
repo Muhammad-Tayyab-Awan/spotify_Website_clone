@@ -1,4 +1,5 @@
 let currentSong = new Audio();
+let playPause = document.querySelector(".play");
 async function getSongs() {
   let fetchSongs = await fetch("http://localhost:5500/songs/");
   let response = await fetchSongs.text();
@@ -38,11 +39,8 @@ async function main() {
     let songToPlay = e.querySelector(".songName");
     songToPlay.parentElement.addEventListener("click", (evt) => {
       playMusic(songToPlay.innerHTML);
-      playPause.classList.remove("fa-circle-play");
-      playPause.classList.add("fa-circle-pause");
     });
   });
-  let playPause = document.querySelector(".play");
   playPause.addEventListener("click", (evt) => {
     if (currentSong.paused) {
       console.log(playPause.outerHTML);
