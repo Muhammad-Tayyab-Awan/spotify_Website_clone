@@ -110,10 +110,10 @@ async function getAlbum() {
   let albumsName = [];
   let albumsData = [];
   for (let i = 0; i < albumLinks.length; i++) {
-    if (albumLinks[i].href.startsWith("songs/")) {
-      albumsName.push(albumLinks[i].href.split("songs/")[1]);
+    if (albumLinks[i].href.startsWith("/songs/")) {
+      albumsName.push(albumLinks[i].href.split("/songs/")[1]);
       albumsData.push(
-        await getAlbumData(albumLinks[i].href.split("songs/")[1])
+        await getAlbumData(albumLinks[i].href.split("/songs/")[1])
       );
     }
   }
