@@ -106,14 +106,14 @@ async function getAlbum() {
   let albums = [];
   for (let i = 0; i < albumLinks.length; i++) {
     if (albumLinks[i].href.startsWith("http://127.0.0.1:5500/songs/")) {
-      albums.push(albumLinks[i].href.split("/songs/")[1]);
+      albumsName.push(albumLinks[i].href.split("/songs/")[1]);
     }
   }
   return {albumsName,albumsData};
 }
 async function main() {
   let albums = await getAlbum();
-  currAlbum = albums.albumName[0];
+  currAlbum = albums.albumsName[0];
   let albumContainer = document.querySelector(".cardContainer");
   albums.forEach((e) => {
     let albumCard = document.createElement("div");
