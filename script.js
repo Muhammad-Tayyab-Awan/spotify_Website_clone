@@ -44,6 +44,7 @@ const playMusic = (track) => {
 
 async function main() {
   let songs = await getSongs();
+  currentSong.src = songs[0];
   let songList = document.querySelector(".songLib");
   for (const song of songs) {
     let songItem = document.createElement("div");
