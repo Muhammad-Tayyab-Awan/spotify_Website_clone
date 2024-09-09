@@ -170,7 +170,7 @@ async function main() {
       playMusic(
         decodeURI(
           songs[songs.indexOf(currentSong.src) - 1].split(
-            `songs/${currAlbum}/`
+            `/songs/${currAlbum}/`
           )[1]
         )
       );
