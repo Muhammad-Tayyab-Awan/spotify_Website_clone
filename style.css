@@ -305,7 +305,7 @@ body {
 }
 .playBarBtns {
   font-size: 1.25rem;
-  height: 33%;
+  height: 33.33%;
   width: 40%;
   display: flex;
   justify-content: space-evenly;
