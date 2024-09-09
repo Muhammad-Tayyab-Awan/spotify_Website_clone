@@ -87,6 +87,6 @@ async function main() {
     currentSong.currentTime = (x * currentSong.duration) / 100;
     document.querySelector(".circle").style.left = `${x.toFixed(2)}%`;
   });
-  ne
+  
 }
 main();
