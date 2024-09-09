@@ -121,6 +121,7 @@ async function getAlbum() {
 }
 async function main() {
   let albums = await getAlbum();
+  console.log(currAlbum);
   currAlbum = albums.albumsName[0];
   console.log(currAlbum);
   let albumContainer = document.querySelector(".cardContainer");
