@@ -104,10 +104,11 @@ async function getAlbum() {
   el.innerHTML = response;
   let albumLinks = el.getElementsByTagName("a");
   let albumsName = [];
-  let albumsData = {};
+  let albumsData = [];
   for (let i = 0; i < albumLinks.length; i++) {
     if (albumLinks[i].href.startsWith("http://127.0.0.1:5500/songs/")) {
       albumsName.push(albumLinks[i].href.split("/songs/")[1]);
+      let albumData = await getAlbumData(albumLinks[i].href.split("/songs/")[1]);
     }
   }
   return {albumsName,albumsData};
