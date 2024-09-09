@@ -82,3 +82,6 @@ async function main() {
   });
 }
 main();
+document.addEventListener("loadeddata", () => {
+  
+})
