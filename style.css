@@ -323,7 +323,7 @@ body {
 }
 .songsTime > *:first-child,
 .songsTime > *:last-child {
-  width: 6%;
+  width: 7%;
   display: flex;
   justify-content: center;
   align-items: center;
