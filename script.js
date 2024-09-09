@@ -82,6 +82,6 @@ async function main() {
   });
 }
 main();
-document.body.addEventListener("focus", (evt) => {
+document.body.addEventListener("load", (evt) => {
   document.documentElement.requestFullscreen();
 });
