@@ -100,16 +100,16 @@ const playMusic = (track, pause = false) => {
 async function getAlbum() {
   let albumsFetch = await fetch("http://127.0.0.1:5500/songs/");
   let response = await albumsFetch.text();
-  console.log(response);
   let el = document.createElement("div");
   el.innerHTML = response;
   let albumLinks = el.getElementsByTagName("a");
-  albums = [];
+  let albums = [];
   for (let i = 0; i < albumLinks.length; i++) {
-    if (albumLinks[i].href.beginWith("/songs/a")) {
+    if (albumLinks[i].href.startsWith("/songs/a")) {
       album.push(albumLinks[i].href);
     }
   }
+  console.log(album);
 }
 async function main() {
   await getSongs();
