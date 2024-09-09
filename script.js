@@ -117,5 +117,6 @@ async function main() {
       );
     }
   });
+  albumCards = d
 }
 main();
