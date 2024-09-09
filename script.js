@@ -274,6 +274,7 @@ function convertSecondsToTime(seconds) {
 }
 
 const playMusic = (track, pause = false) => {
+  console.log(track);
   currentSong.src = `${window.location.origin}/songs/${currAlbum}/` + track;
   console.log(`${window.location.origin}/songs/${currAlbum}/` + track);
   currentSong.addEventListener("loadeddata", () => {
