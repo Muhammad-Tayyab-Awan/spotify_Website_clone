@@ -98,7 +98,7 @@ const playMusic = (track, pause = false) => {
 };
 async function getAlbumData(path) {
   let response = await fetch(`http://127.0.0.1:5500/songs/${path}/info.json`);
-  let jsonResponse = await response.json;
+  let jsonResponse = await response.json();
   console.log(jsonResponse);
   return jsonResponse;
 }
