@@ -14,6 +14,13 @@ async function getSongs() {
   return songs;
 }
 
+function playMusic(track) {
+  currentSong = new Audio();
+  console.log(currentSong);
+  currentSong.src = "/songs/" + track;
+  currentSong.play();
+}
+
 async function main() {
   let songs = await getSongs();
   let songList = document.querySelector(".songLib");
@@ -37,9 +44,3 @@ async function main() {
   });
 }
 main();
-function playMusic(track) {
-  currentSong = new Audio();
-  console.log(currentSong);
-  currentSong.src = "/songs/" + track;
-  currentSong.play();
-}
