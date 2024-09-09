@@ -39,7 +39,14 @@ async function main() {
     songToPlay.parentElement.addEventListener("click", (evt) => {
       playMusic(songToPlay.innerHTML);
     });
-    
+    playPause.addEventListener("click", (evt) => {
+      if (currentSong.paused) {
+        currentSong.play();
+        playPause.innerHTML = `<i class="fa - solid fa - circle - pause"></i>`;
+      } else {
+        currentSong.pause();
+      }
+    });
   });
 }
 main();
