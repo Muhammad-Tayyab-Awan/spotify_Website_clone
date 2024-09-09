@@ -25,21 +25,23 @@ function convertSecondsToTime(seconds) {
 
 const playMusic = (track, pause = false) => {
   currentSong.src = "/songs/" + track;
-  currentSong.play();
-  document.querySelector(".songsInfo").innerText = track.split(".")[0];
-  currentSong.addEventListener("timeupdate", () => {
-    document.querySelector(".totalDur").innerText = convertSecondsToTime(
-      currentSong.duration
-    );
-    document.querySelector(".currTime").innerText = convertSecondsToTime(
-      currentSong.currentTime
-    );
-    document.querySelector(".circle").style.left = `${
-      (currentSong.currentTime / currentSong.duration) * 100
-    }%`;
-  });
-  playPause.classList.toggle("fa-circle-play");
-  playPause.classList.toggle("fa-circle-pause");
+  if (!pause) {
+    currentSong.play();
+    document.querySelector(".songsInfo").innerText = track.split(".")[0];
+    currentSong.addEventListener("timeupdate", () => {
+      document.querySelector(".totalDur").innerText = convertSecondsToTime(
+        currentSong.duration
+      );
+      document.querySelector(".currTime").innerText = convertSecondsToTime(
+        currentSong.currentTime
+      );
+      document.querySelector(".circle").style.left = `${
+        (currentSong.currentTime / currentSong.duration) * 100
+      }%`;
+    });
+    playPause.classList.toggle("fa-circle-play");
+    playPause.classList.toggle("fa-circle-pause");
+  }
 };
 
 async function main() {
