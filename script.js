@@ -126,7 +126,7 @@ currentSong.addEventListener("timeupdate", () => {
 });
 
 async function main() {
-  await getSongs();
+  songs = await getSongs();
 
   playMusic(decodeURI(songs[0].split(`/songs/${currAlbum}/`)[1]), true);
 
