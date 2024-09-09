@@ -39,20 +39,20 @@ async function main() {
     songToPlay.parentElement.addEventListener("click", (evt) => {
       playMusic(songToPlay.innerHTML);
     });
-    let playPause = document.querySelector(".play");
-    playPause.addEventListener("click", (evt) => {
-      if (currentSong.paused) {
-        console.log(playPause.outerHTML);
-        playPause.classList.remove("fa-circle-pause");
-        playPause.classList.add("fa-circle-play");
-        console.log(playPause.outerHTML);
-        currentSong.play();
-      } else {
-        currentSong.pause();
-        playPause.classList.remove("fa-circle-play");
-        playPause.classList.add("fa-circle-pause");
-      }
-    });
+  });
+  let playPause = document.querySelector(".play");
+  playPause.addEventListener("click", (evt) => {
+    if (currentSong.paused) {
+      console.log(playPause.outerHTML);
+      playPause.classList.toggle("fa-circle-pause");
+      playPause.classList.toggle("fa-circle-play");
+      console.log(playPause.outerHTML);
+      currentSong.play();
+    } else {
+      currentSong.pause();
+      playPause.classList.toggle("fa-circle-play");
+      playPause.classList.toggle("fa-circle-pause");
+    }
   });
 }
 main();
