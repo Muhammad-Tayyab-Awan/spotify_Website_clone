@@ -15,6 +15,18 @@ async function getSongs() {
     }
   }
 
+  currentSong.addEventListener("timeupdate", () => {
+    document.querySelector(".totalDur").innerText = convertSecondsToTime(
+      currentSong.duration
+    );
+    document.querySelector(".currTime").innerText = convertSecondsToTime(
+      currentSong.currentTime
+    );
+    document.querySelector(".circle").style.left = `${
+      (currentSong.currentTime / currentSong.duration) * 100
+    }%`;
+  });
+
   playMusic(decodeURI(songs[0].split(`/songs/${currAlbum}/`)[1]), true);
 
   let songList = document.querySelector(".songLib");
@@ -115,8 +127,6 @@ const playMusic = (track, pause = false) => {
     playPause.classList.add("fa-circle-pause");
   }
 };
-
-
 
 async function main() {
   await getSongs();
