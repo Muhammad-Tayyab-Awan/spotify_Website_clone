@@ -299,8 +299,7 @@ body {
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
   display: flex;
-  justify-content: center;
-  gap: 0.15rem;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
 }
@@ -322,7 +321,7 @@ body {
   background-color: #474444;
 }
 .songsInfo {
-  height: 50%;
+  height: 40%;
   width: 90%;
   display: flex;
   justify-content: center;
