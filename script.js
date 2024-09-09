@@ -40,7 +40,8 @@ async function main() {
   ).forEach((e) => {
     let songToPlay = e.querySelector(".songName");
     songToPlay.parentElement.addEventListener("click", (evt) => {
-      
+      document.querySelector(".songsInfo").innerText =
+        songToPlay.innerHTML.split(".")[0];
       playMusic(songToPlay.innerHTML);
     });
   });
