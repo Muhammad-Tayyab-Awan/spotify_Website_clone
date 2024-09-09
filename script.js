@@ -68,13 +68,13 @@ async function main() {
   });
   playPause.addEventListener("click", (evt) => {
     if (currentSong.paused) {
-      playPause.classList.toggle("fa-circle-pause");
-      playPause.classList.toggle("fa-circle-play");
       currentSong.play();
+      playPause.classList.add("fa-circle-pause");
+      playPause.classList.remove("fa-circle-play");
     } else {
       currentSong.pause();
-      playPause.classList.toggle("fa-circle-play");
-      playPause.classList.toggle("fa-circle-pause");
+      playPause.classList.add("fa-circle-play");
+      playPause.classList.remove("fa-circle-pause");
     }
   });
 }
