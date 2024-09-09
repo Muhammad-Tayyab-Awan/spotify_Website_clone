@@ -318,7 +318,7 @@ body {
   height: 25%;
   width: 90%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   gap: 0.5rem;
 }
