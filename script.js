@@ -1,7 +1,8 @@
 let currentSong = new Audio();
 let playPause = document.querySelector(".play");
+let currAlbum;
 async function getSongs() {
-  let fetchSongs = await fetch("http://localhost:5500/songs/");
+  let fetchSongs = await fetch(`http://localhost:5500/songs/${currAlbum}/`);
   let response = await fetchSongs.text();
   let el = document.createElement("div");
   el.innerHTML = response;
