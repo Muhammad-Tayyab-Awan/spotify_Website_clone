@@ -112,9 +112,11 @@ async function getAlbum() {
   return albums;
 }
 async function main() {
-  await getSongs();
   let albums = await getAlbum();
   currAlbum = albums[0];
+
+  await getSongs();
+
   playPause.addEventListener("click", (evt) => {
     if (currentSong.paused) {
       currentSong.play();
