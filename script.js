@@ -38,8 +38,8 @@ const playMusic = (track) => {
       (currentSong.currentTime / currentSong.duration) * 100
     }%`;
   });
-  playPause.classList.remove("fa-circle-play");
-  playPause.classList.add("fa-circle-pause");
+  playPause.classList.toggle("fa-circle-play");
+  playPause.classList.toggle("fa-circle-pause");
 };
 
 async function main() {
