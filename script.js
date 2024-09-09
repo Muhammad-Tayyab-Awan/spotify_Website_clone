@@ -33,7 +33,7 @@ async function main() {
                 .split("/songs/")[1]
                 .replaceAll("%20", " ")}</p>
               <p class="playNow"><i class="fa-solid fa-circle-play"></i></p>`;
-    songList.prepend(songItem);
+    songList.append(songItem);
   }
   Array.from(
     document.querySelector(".songLib").querySelectorAll(".songCard")
