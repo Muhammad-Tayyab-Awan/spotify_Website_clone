@@ -18,6 +18,8 @@ async function getSongs() {
 const playMusic = (track) => {
   currentSong.src = "/songs/" + track;
   currentSong.play();
+  playPause.classList.remove("fa-circle-play");
+  playPause.classList.add("fa-circle-pause");
 };
 
 async function main() {
