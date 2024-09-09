@@ -38,6 +38,8 @@ async function main() {
     let songToPlay = e.querySelector(".songName");
     songToPlay.parentElement.addEventListener("click", (evt) => {
       playMusic(songToPlay.innerHTML);
+      playPause.classList.toggle("fa-circle-play");
+      playPause.classList.toggle("fa-circle-pause");
     });
   });
   let playPause = document.querySelector(".play");
