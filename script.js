@@ -43,12 +43,14 @@ async function main() {
     playPause.addEventListener("click", (evt) => {
       if (currentSong.paused) {
         console.log(playPause.outerHTML);
-        playPause.outerHTML = `<i class="fa-solid fa-circle-play play"></i>`;
+        playPause.classList.remove("fa-circle-pause");
+        playPause.classList.add("fa-circle-play");
         console.log(playPause.outerHTML);
         currentSong.play();
       } else {
         currentSong.pause();
-        playPause.outerHTML = `<i class="fa-solid fa-circle-pause play"></i>`;
+        playPause.classList.remove("fa-circle-pause");
+        playPause.classList.add("fa-circle-play");
       }
     });
   });
