@@ -116,7 +116,9 @@ async function main() {
   currAlbum = albums[0];
   let albumContainer = document.querySelector(".cardContainer");
   albums.forEach((e) => {
-    let albumCard = document.createElement("")
+    let albumCard = document.createElement("div");
+    albumCard.classList.add("card");
+    albumCard.setAttribute("data-album", `${e}`);
   })
 
   await getSongs();
