@@ -319,6 +319,9 @@ body {
   background-color: yellow;
   height: 33%;
   width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .seekBar {
   position: relative;
