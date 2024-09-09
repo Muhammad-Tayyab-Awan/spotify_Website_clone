@@ -299,10 +299,11 @@ body {
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 .playBarBtns {
   font-size: 1.25rem;
   height: 30%;
