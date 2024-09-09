@@ -320,8 +320,8 @@ body {
   height: 4px;
   background-color: #474444;
 }
-.songsInfo{
-  
+.songsInfo {
+  height: 40%;
 }
 .seekBar .circle {
   position: absolute;
