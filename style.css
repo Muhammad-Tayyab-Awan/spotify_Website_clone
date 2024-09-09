@@ -252,8 +252,11 @@ body {
   flex-wrap: wrap;
   overflow: hidden auto;
 }
-.card {
+.cover {
   position: relative;
+}
+.card {
+  /* position: relative; */
   width: 18%;
   margin: 0.5rem;
   display: flex;
