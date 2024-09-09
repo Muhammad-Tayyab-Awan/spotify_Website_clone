@@ -299,7 +299,7 @@ body {
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
 }
@@ -317,7 +317,7 @@ body {
 }
 .songsTime {
   background-color: yellow;
-  height: 33%;
+  height: 25%;
   width: 90%;
   display: flex;
   justify-content: center;
