@@ -1,6 +1,8 @@
 let currentSong = new Audio();
 let playPause = document.querySelector(".play");
 let currAlbum = "me";
+
+
 async function getSongs() {
   let fetchSongs = await fetch(`http://localhost:5500/songs/${currAlbum}/`);
   let response = await fetchSongs.text();
@@ -27,6 +29,9 @@ function convertSecondsToTime(seconds) {
   return `${paddedMinutes}:${paddedSeconds}`;
 }
 
+
+
+
 const playMusic = (track, pause = false) => {
   currentSong.src = `/songs/${currAlbum}/` + track;
   currentSong.addEventListener("loadeddata", () => {
@@ -42,7 +47,12 @@ const playMusic = (track, pause = false) => {
   }
 };
 
+
+
+
 async function main() {
+
+
   currentSong.addEventListener("timeupdate", () => {
     document.querySelector(".totalDur").innerText = convertSecondsToTime(
       currentSong.duration
@@ -54,9 +64,15 @@ async function main() {
       (currentSong.currentTime / currentSong.duration) * 100
     }%`;
   });
+
+
+
   let songs = await getSongs();
+  
   playMusic(decodeURI(songs[0].split(`/songs/${currAlbum}/`)[1]), true);
+  
   let songList = document.querySelector(".songLib");
+  
   for (const song of songs) {
     let songItem = document.createElement("div");
     songItem.classList.add("songCard");
@@ -67,6 +83,8 @@ async function main() {
               <p class="playNow"><i class="fa-solid fa-circle-play"></i></p>`;
     songList.append(songItem);
   }
+
+
   Array.from(
     document.querySelector(".songLib").querySelectorAll(".songCard")
   ).forEach((e) => {
@@ -75,6 +93,8 @@ async function main() {
       playMusic(songToPlay.innerHTML);
     });
   });
+
+  
   playPause.addEventListener("click", (evt) => {
     if (currentSong.paused) {
       currentSong.play();
