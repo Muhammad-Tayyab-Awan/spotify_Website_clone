@@ -29,7 +29,10 @@ async function main() {
   Array.from(
     document.querySelector(".songLib").querySelectorAll(".songCard")
   ).forEach((e) => {
-    console.log(e.querySelector(".songName").innerText);
+    let songToPlay = e.querySelector(".songName");
+    songToPlay.addEventListener("click", (e) => {
+      playMusic();
+    });
   });
 }
 main();
