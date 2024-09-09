@@ -48,7 +48,7 @@ async function main() {
         currentSong.play();
       } else {
         currentSong.pause();
-        playPause.outerHTML = `<i class="fa - solid fa - circle - pause"></i>`;
+        playPause.outerHTML = `<i class="fa-solid fa-circle-pause play"></i>`;
       }
     });
   });
