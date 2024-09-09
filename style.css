@@ -273,7 +273,7 @@ body {
   width: 90%;
 }
 .card img {
-  height: 160px;
+  width: 1em;
   margin-top: 0.5rem;
   border-radius: inherit;
 }
