@@ -39,6 +39,7 @@ async function main() {
     songToPlay.parentElement.addEventListener("click", (evt) => {
       playMusic(songToPlay.innerHTML);
     });
+    let playPause = document.get
     playPause.addEventListener("click", (evt) => {
       if (currentSong.paused) {
         currentSong.play();
