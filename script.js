@@ -52,9 +52,7 @@ async function main() {
     let songItem = document.createElement("div");
     songItem.classList.add("songCard");
     songItem.innerHTML = `<i class="fa-solid fa-music"></i>
-              <p class="songName">${song
-                .split("/songs/")[1]
-                .replaceAll("%20", " ")}</p>
+              <p class="songName">${decodeURI(song.split("/songs/")[1])}</p>
               <p class="playNow"><i class="fa-solid fa-circle-play"></i></p>`;
     songList.append(songItem);
   }
