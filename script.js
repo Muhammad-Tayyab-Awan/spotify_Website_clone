@@ -29,7 +29,7 @@ async function main() {
   Array.from(
     document.querySelector(".songLib").querySelectorAll(".songCard")
   ).forEach((e) => {
-    console.log(e.querySelector(".songName"));
+    console.log(e.querySelector(".songName").innerText);
   });
 }
 main();
