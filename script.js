@@ -87,9 +87,6 @@ const playMusic = (track, pause = false) => {
     currentSong.play();
     playPause.classList.remove("fa-circle-play");
     playPause.classList.add("fa-circle-pause");
-  } else {
-    playPause.classList.toggle("fa-circle-play");
-    playPause.classList.toggle("fa-circle-pause");
   }
 };
 
