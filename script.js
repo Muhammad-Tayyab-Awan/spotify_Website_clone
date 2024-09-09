@@ -104,6 +104,8 @@ async function main() {
       playMusic(
         decodeURI(songs[songs.indexOf(currentSong.src) - 1].split("/songs/")[1])
       );
+    } else {
+      currentSong.pause();
     }
   });
 }
