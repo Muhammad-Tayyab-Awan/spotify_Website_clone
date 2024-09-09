@@ -318,9 +318,8 @@ body {
   height: 25%;
   width: 90%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  gap: 0.5rem;
 }
 .songsTime > *:first-child,
 .songsTime > *:last-child {
