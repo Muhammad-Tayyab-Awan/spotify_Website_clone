@@ -274,9 +274,7 @@ function convertSecondsToTime(seconds) {
 }
 
 const playMusic = (track, pause = false) => {
-  console.log(track);
-  currentSong.src = track;
-  console.log(`${window.location.origin}/songs/${currAlbum}/` + track);
+  currentSong.src = `/songs/${currAlbum}/` + track;
   currentSong.addEventListener("loadeddata", () => {
     document.querySelector(".totalDur").innerText = convertSecondsToTime(
       currentSong.duration
@@ -288,9 +286,15 @@ const playMusic = (track, pause = false) => {
     playPause.classList.add("fa-circle-play");
   }
   if (!pause) {
-    currentSong.play();
-    playPause.classList.toggle("fa-circle-play", false);
-    playPause.classList.toggle("fa-circle-pause", true);
+    currentSong.play(playPause.classList.remove("fa-circle-play"));
+    currentSong.play(playPause.classList.remove("fa-circle-pause"));
+    console.log();
+    if (playPause.classList.contains("fa-circle-play")) {
+      playPause.classList.remove("fa-circle-play");
+    }
+    if (!playPause.classList.contains("fa-circle-pause")) {
+      playPause.classList.add("fa-circle-pause");
+    }
   }
 };
 
