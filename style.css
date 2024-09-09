@@ -311,6 +311,9 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
+.playBarBtns > * {
+  cursor: pointer;
+}
 .seekBar {
   position: relative;
   width: 60%;
