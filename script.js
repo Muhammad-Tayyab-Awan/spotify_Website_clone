@@ -327,12 +327,12 @@ async function getAlbum() {
     for (let i = 0; i < albumLinks.length; i++) {
       if (albumLinks[i].href.startsWith(`/songs/`)) {
         let albumPath = albumLinks[i].href.split("/songs/")[1];
-        console.log(albumLinks[i].href.split("/songs/"));
-        console.log(albumLinks[i].href.split("/songs/")[1]);
         albumsName.push(albumPath);
         albumsData.push(await getAlbumData(albumPath));
       }
     }
+
+    console.log({ albumsName, albumsData });
     return { albumsName, albumsData };
   } catch (error) {
     console.error("Error fetching albums:", error);
