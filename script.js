@@ -87,7 +87,8 @@ async function main() {
     let y = evt.clientY - rect.top;
     x = (x / rect.width) * 100;
     y = (y / rect.height) * 100;
-    console.log(`Clicked at: X: ${x.toFixed(2)}px, Y: ${y.toFixed(2)}px`);
+    currentSong.currentTime = y
+    document.querySelector(".circle").style.left = `${x.toFixed(2)}%`;
   });
 }
 main();
