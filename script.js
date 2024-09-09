@@ -19,8 +19,8 @@ function convertSecondsToTime(seconds) {
   const minutes = Math.floor(seconds / 60);
   const remainingSeconds = seconds % 60;
   const paddedMinutes = String(minutes).padStart(2, "0");
-  const paddedSeconds = String(remainingSeconds).padStart(2, "0");
-  return `${paddedMinutes}:${Math.floor(paddedSeconds)}`;
+  const paddedSeconds = String(Math.floor(remainingSeconds)).padStart(2, "0");
+  return `${paddedMinutes}:${paddedSeconds}`;
 }
 
 const playMusic = (track) => {
