@@ -43,19 +43,19 @@ const playMusic = (track, pause = false) => {
   }
 };
 
-async function main() {
-  currentSong.addEventListener("timeupdate", () => {
-    document.querySelector(".totalDur").innerText = convertSecondsToTime(
-      currentSong.duration
-    );
-    document.querySelector(".currTime").innerText = convertSecondsToTime(
-      currentSong.currentTime
-    );
-    document.querySelector(".circle").style.left = `${
-      (currentSong.currentTime / currentSong.duration) * 100
-    }%`;
-  });
+currentSong.addEventListener("timeupdate", () => {
+  document.querySelector(".totalDur").innerText = convertSecondsToTime(
+    currentSong.duration
+  );
+  document.querySelector(".currTime").innerText = convertSecondsToTime(
+    currentSong.currentTime
+  );
+  document.querySelector(".circle").style.left = `${
+    (currentSong.currentTime / currentSong.duration) * 100
+  }%`;
+});
 
+async function main() {
   let songs = await getSongs();
 
   playMusic(decodeURI(songs[0].split(`/songs/${currAlbum}/`)[1]), true);
