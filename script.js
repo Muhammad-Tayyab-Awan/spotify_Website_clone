@@ -198,9 +198,7 @@ let songs = [];
 
 async function getSongs() {
   try {
-    let fetchSongs = await fetch(
-      `${window.location.origin}/songs/${currAlbum}/`
-    );
+    let fetchSongs = await fetch(`/songs/${currAlbum}/`);
     if (!fetchSongs.ok) throw new Error("Songs not found");
     let response = await fetchSongs.text();
     let el = document.createElement("div");
