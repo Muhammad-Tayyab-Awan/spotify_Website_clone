@@ -102,7 +102,7 @@ async function getAlbumData(path) {
   return jsonResponse;
 }
 async function getAlbum() {
-  let albumsFetch = await fetch("/songs/");
+  let albumsFetch = await fetch("songs/");
   let response = await albumsFetch.text();
   let el = document.createElement("div");
   el.innerHTML = response;
