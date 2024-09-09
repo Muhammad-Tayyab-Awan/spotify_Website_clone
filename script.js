@@ -1,6 +1,6 @@
 let currentSong = new Audio();
 let playPause = document.querySelector(".play");
-let currAlbum;
+let currAlbum = "me";
 async function getSongs() {
   let fetchSongs = await fetch(`http://localhost:5500/songs/${currAlbum}/`);
   let response = await fetchSongs.text();
@@ -61,7 +61,9 @@ async function main() {
     let songItem = document.createElement("div");
     songItem.classList.add("songCard");
     songItem.innerHTML = `<i class="fa-solid fa-music"></i>
-              <p class="songName">${decodeURI(song.split(`/songs/${currAlbum}/`)[1])}</p>
+              <p class="songName">${decodeURI(
+                song.split(`/songs/${currAlbum}/`)[1]
+              )}</p>
               <p class="playNow"><i class="fa-solid fa-circle-play"></i></p>`;
     songList.append(songItem);
   }
@@ -95,7 +97,11 @@ async function main() {
   nextSong.addEventListener("click", (evt) => {
     if (songs.indexOf(currentSong.src) + 1 < songs.length) {
       playMusic(
-        decodeURI(songs[songs.indexOf(currentSong.src) + 1].split("/songs/")[1])
+        decodeURI(
+          songs[songs.indexOf(currentSong.src) + 1].split(
+            `/songs/${currAlbum}/`
+          )[1]
+        )
       );
     }
   });
@@ -103,7 +109,11 @@ async function main() {
   prevSong.addEventListener("click", (evt) => {
     if (songs.indexOf(currentSong.src) - 1 >= 0) {
       playMusic(
-        decodeURI(songs[songs.indexOf(currentSong.src) - 1].split("/songs/")[1])
+        decodeURI(
+          songs[songs.indexOf(currentSong.src) - 1].split(
+            `/songs/${currAlbum}/`
+          )[1]
+        )
       );
     }
   });
