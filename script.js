@@ -117,6 +117,7 @@ async function getAlbum() {
       );
     }
   }
+  console.log({ albumsName, albumsData });
   return { albumsName, albumsData };
 }
 async function main() {
