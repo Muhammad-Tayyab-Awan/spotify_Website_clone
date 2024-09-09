@@ -40,6 +40,5 @@ async function main() {
       playMusic(songToPlay.innerHTML);
     });
   });
-  
 }
 main();
