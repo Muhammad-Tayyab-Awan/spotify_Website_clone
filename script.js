@@ -119,9 +119,10 @@ async function main() {
   });
   let albumCards = document.querySelectorAll(".card");
   albumCards.forEach((e) => {
-    e.addEventListener("click", (evt) => {
+    e.addEventListener("click", async (evt) => {
       console.log(evt.currentTarget.dataset.album);
       currAlbum = evt.currentTarget.dataset.album;
+      songs = await getSongs();
     });
   });
 }
