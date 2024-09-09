@@ -14,7 +14,9 @@ async function getSongs() {
       songs.push(songLinks[i].href);
     }
   }
+  
   playMusic(decodeURI(songs[0].split(`/songs/${currAlbum}/`)[1]), true);
+
   let songList = document.querySelector(".songLib");
   songList.innerHTML = "";
   for (const song of songs) {
