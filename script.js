@@ -113,7 +113,7 @@ async function getAlbum() {
 }
 async function main() {
   let albums = await getAlbum();
-  currAlbum = albums[0];
+  currAlbum = albums.albumName[0];
   let albumContainer = document.querySelector(".cardContainer");
   albums.forEach((e) => {
     let albumCard = document.createElement("div");
