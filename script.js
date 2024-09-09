@@ -129,7 +129,7 @@ currentSong.addEventListener("timeupdate", () => {
 });
 
 async function main() {
-  songs = await getSongs();
+  await getSongs();
 
   let albumCards = document.querySelectorAll(".card");
 
