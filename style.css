@@ -322,6 +322,10 @@ body {
   align-items: center;
   gap: 0.5rem;
 }
+.songsTime > *:first-child,
+.songsTime > *:last-child {
+  width: 30%;
+}
 .seekBar {
   position: relative;
   width: 60%;
