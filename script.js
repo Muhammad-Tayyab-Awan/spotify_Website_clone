@@ -315,7 +315,7 @@ async function getAlbumData(path) {
 
 async function getAlbum() {
   try {
-    let albumsFetch = await fetch(`${window.location.origin}/songs/`);
+    let albumsFetch = await fetch(`/songs`);
     if (!albumsFetch.ok) throw new Error("Albums not found");
     let response = await albumsFetch.text();
     let el = document.createElement("div");
