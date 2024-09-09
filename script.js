@@ -89,7 +89,7 @@ async function main() {
   });
   let nextSong = document.querySelector(".next");
   nextSong.addEventListener("click", (evt) => {
-    playMusic(songs.indexOf(currentSong.src) + 1);
+    playMusic(songs[songs.indexOf(currentSong.src) + 1].split("/songs/")[1]);
   });
 }
 main();
