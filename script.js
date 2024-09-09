@@ -122,7 +122,8 @@ async function main() {
     albumCard.innerHTML = `<img src="/images/cover.jpg" alt="Cover" />
               <i class="fa-solid fa-circle-play"></i>
               <p>Description</p>`;
-  })
+    albumContainer.append(albumCard);
+  });
 
   await getSongs();
 
