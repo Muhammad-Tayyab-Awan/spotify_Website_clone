@@ -103,11 +103,11 @@ async function getAlbum() {
   console.log(response);
   let el = document.createElement("div");
   el.innerHTML = response;
-  let albLinks = el.getElementsByTagName("a");
-  songs = [];
+  let albumLinks = el.getElementsByTagName("a");
+  albums = [];
   for (let i = 0; i < songLinks.length; i++) {
-    if (songLinks[i].href.endsWith(".mp3")) {
-      songs.push(songLinks[i].href);
+    if (albumLinks[i].href.endsWith(".mp3")) {
+      album.push(albumLinks[i].href);
     }
   }
 }
