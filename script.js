@@ -123,13 +123,13 @@ async function main() {
   let albums = await getAlbum();
   currAlbum = albums.albumsName[0];
   let albumContainer = document.querySelector(".cardContainer");
-  albums.forEach((e,i) => {
+  albums.albumsName.forEach((e, i) => {
     let albumCard = document.createElement("div");
     albumCard.classList.add("card");
     albumCard.setAttribute("data-album", `${e}`);
     albumCard.innerHTML = `<img src="/songs/${e}/cover.jpg" alt="${e}" />
               <i class="fa-solid fa-circle-play"></i>
-              <p>${e}</p>`;
+              <p>${albums.albumsData.title}</p>`;
     albumContainer.append(albumCard);
   });
 
