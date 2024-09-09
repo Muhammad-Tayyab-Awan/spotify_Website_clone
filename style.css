@@ -331,7 +331,7 @@ body {
 .seekBar {
   position: relative;
   width: 60%;
-  height: 4px;
+  height: 6px;
   background-color: #474444;
   cursor: pointer;
 }
@@ -347,7 +347,7 @@ body {
   position: absolute;
   width: 10px;
   height: 10px;
-  top: -3px;
+  top: -4px;
   left: 0%;
   border-radius: 100%;
   background-color: white;
