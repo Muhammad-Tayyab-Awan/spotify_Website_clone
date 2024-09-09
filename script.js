@@ -51,18 +51,6 @@ async function getSongs() {
     });
   });
 
-  playPause.addEventListener("click", (evt) => {
-    if (currentSong.paused) {
-      currentSong.play();
-      playPause.classList.add("fa-circle-pause");
-      playPause.classList.remove("fa-circle-play");
-    } else {
-      currentSong.pause();
-      playPause.classList.add("fa-circle-play");
-      playPause.classList.remove("fa-circle-pause");
-    }
-  });
-
   let seekBar = document.querySelector(".seekBar");
 
   seekBar.addEventListener("click", (evt) => {
@@ -130,6 +118,18 @@ const playMusic = (track, pause = false) => {
 
 async function main() {
   await getSongs();
+
+  playPause.addEventListener("click", (evt) => {
+    if (currentSong.paused) {
+      currentSong.play();
+      playPause.classList.add("fa-circle-pause");
+      playPause.classList.remove("fa-circle-play");
+    } else {
+      currentSong.pause();
+      playPause.classList.add("fa-circle-play");
+      playPause.classList.remove("fa-circle-pause");
+    }
+  });
 
   let albumCards = document.querySelectorAll(".card");
 
