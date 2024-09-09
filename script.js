@@ -105,7 +105,7 @@ async function getAlbum() {
   el.innerHTML = response;
   let albumLinks = el.getElementsByTagName("a");
   albums = [];
-  for (let i = 0; i < songLinks.length; i++) {
+  for (let i = 0; i < albumLinks.length; i++) {
     if (albumLinks[i].href.endsWith(".mp3")) {
       album.push(albumLinks[i].href);
     }
