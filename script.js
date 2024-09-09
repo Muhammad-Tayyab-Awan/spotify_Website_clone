@@ -325,7 +325,7 @@ async function getAlbum() {
     let albumsName = [];
     let albumsData = [];
     for (let i = 0; i < albumLinks.length; i++) {
-      if (albumLinks[i].href.startsWith(`/songs/`)) {
+      if (albumLinks[i].href.startsWith(`${window.location.origin}/songs/`)) {
         let albumPath = albumLinks[i].href.split("/songs/")[1];
         albumsName.push(albumPath);
         albumsData.push(await getAlbumData(albumPath));
