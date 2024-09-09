@@ -36,7 +36,7 @@ async function main() {
     document.querySelector(".songLib").querySelectorAll(".songCard")
   ).forEach((e) => {
     let songToPlay = e.querySelector(".songName");
-    songToPlay.parentElement().addEventListener("click", (evt) => {
+    songToPlay.parentElement.addEventListener("click", (evt) => {
       playMusic(songToPlay.innerHTML);
     });
   });
