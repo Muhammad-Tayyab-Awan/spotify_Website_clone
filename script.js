@@ -1,3 +1,4 @@
+let currentSong;
 async function getSongs() {
   let fetchSongs = await fetch("http://localhost:5500/songs/");
   let response = await fetchSongs.text();
@@ -31,8 +32,13 @@ async function main() {
   ).forEach((e) => {
     let songToPlay = e.querySelector(".songName");
     songToPlay.addEventListener("click", (e) => {
-      playMusic();
+      playMusic(songToPlay.innerText);
     });
   });
 }
 main();
+function playMusic(track) {
+  currentSong = new Audio();
+  currentSong.src = "/songs/" + track;
+  currentSong.play();
+}
