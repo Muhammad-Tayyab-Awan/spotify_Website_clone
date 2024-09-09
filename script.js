@@ -81,11 +81,11 @@ const playMusic = (track, pause = false) => {
       currentSong.duration
     );
   });
-
   document.querySelector(".songsInfo").innerText = track.split(".")[0];
   if (!pause) {
     currentSong.play();
-    playPause.classList.remove("fa-circle-play");
+    if (playPause.classList.contains("fa-circle-play"))
+      playPause.classList.remove("fa-circle-play");
     playPause.classList.add("fa-circle-pause");
   }
 };
