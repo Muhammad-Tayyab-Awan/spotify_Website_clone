@@ -39,6 +39,7 @@ async function main() {
     songToPlay.parentElement.addEventListener("click", (evt) => {
       playMusic(songToPlay.innerHTML);
     });
+    
   });
 }
 main();
