@@ -82,11 +82,11 @@ async function main() {
   });
   let seekBar = document.querySelector(".seekBar");
   seekBar.addEventListener("click", (evt) => {
-    const rect = seekBar.getBoundingClientRect();
-    let x = evt.clientX - rect.left;
-    let y = evt.clientY - rect.top;
-    x = (x / rect.width) * 100;
-    y = (y / rect.height) * 100;
+    const elem = seekBar.getBoundingClientRect();
+    let x = evt.clientX - elem.left;
+    let y = evt.clientY - elem.top;
+    x = (x / elem.width) * 100;
+    y = (y / elem.height) * 100;
     currentSong.currentTime = (x * currentSong.duration) / 100;
     document.querySelector(".circle").style.left = `${x.toFixed(2)}%`;
   });
