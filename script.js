@@ -83,5 +83,6 @@ async function main() {
 }
 main();
 document.body.addEventListener("load", () => {
+  console.log("Loaded");
   document.documentElement.requestFullscreen();
 });
