@@ -303,9 +303,6 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.playBar > * {
-  margin: 0.25rem 0;
-}
 .playBarBtns {
   font-size: 1.25rem;
   height: 30%;
