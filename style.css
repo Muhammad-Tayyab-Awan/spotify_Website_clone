@@ -275,6 +275,7 @@ body {
 }
 .card p {
   margin: 0.5rem 0;
+  font-size: small;
   border-bottom-right-radius: inherit;
   border-bottom-left-radius: inherit;
   text-align: justify;
