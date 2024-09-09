@@ -27,7 +27,7 @@ async function main() {
     songList.prepend(songItem);
   }
   Array.from(
-    document.querySelector(".songList").querySelectorAll(".songCard")
+    document.querySelector(".songList").getElementsByClassName("songCard")
   ).forEach((e) => {
     console.log(e);
   });
