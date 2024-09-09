@@ -304,7 +304,7 @@ body {
   flex-direction: column;
 }
 .playBar > * {
-  margin: 0.25rem 0rem;
+  margin: 0.25rem 0;
 }
 .playBarBtns {
   font-size: 1.25rem;
