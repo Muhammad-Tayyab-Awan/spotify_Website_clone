@@ -252,11 +252,8 @@ body {
   flex-wrap: wrap;
   overflow: hidden auto;
 }
-.cover {
-  position: relative;
-}
+
 .card {
-  /* position: relative; */
   width: 18%;
   margin: 0.5rem;
   display: flex;
@@ -264,6 +261,10 @@ body {
   align-items: center;
   flex-direction: column;
   border-radius: 8px;
+}
+.cover {
+  position: relative;
+  border-radius: inherit;
 }
 .card:hover {
   background-color: #474444;
@@ -284,7 +285,7 @@ body {
   text-align: justify;
 }
 .card i {
-  top: 65%;
+  top: 75%;
   left: 75%;
   position: absolute;
   font-size: 2rem;
