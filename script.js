@@ -222,6 +222,7 @@ async function getSongs() {
         (currentSong.currentTime / currentSong.duration) * 100
       }%`;
     });
+    console.log(currAlbum);
     console.log(songs[0]);
     console.log(decodeURI(songs[0].split(`/songs/${currAlbum}/`)[0]));
     playMusic(decodeURI(songs[0].split(`/songs/${currAlbum}/`)[1]), true);
