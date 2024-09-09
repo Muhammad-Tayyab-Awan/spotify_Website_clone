@@ -350,7 +350,7 @@ body {
   left: 0%;
   border-radius: 100%;
   background-color: white;
-  transition: left 0.25s;
+  transition: left 100ms;
 }
 /* Playbar */
 
