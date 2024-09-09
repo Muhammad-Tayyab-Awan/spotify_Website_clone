@@ -123,7 +123,7 @@ async function main() {
   let albums = await getAlbum();
   currAlbum = albums.albumsName[0];
   let albumContainer = document.querySelector(".cardContainer");
-  albums.forEach((e) => {
+  albums.forEach((e,i) => {
     let albumCard = document.createElement("div");
     albumCard.classList.add("card");
     albumCard.setAttribute("data-album", `${e}`);
