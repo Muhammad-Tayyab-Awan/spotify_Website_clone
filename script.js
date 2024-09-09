@@ -20,7 +20,7 @@ function convertSecondsToTime(seconds) {
   const remainingSeconds = seconds % 60;
   const paddedMinutes = String(minutes).padStart(2, "0");
   const paddedSeconds = String(remainingSeconds).padStart(2, "0");
-  return `${paddedMinutes}:${paddedSeconds}`;
+  return `${paddedMinutes}:${Math.ceil(paddedSeconds)}`;
 }
 
 const playMusic = (track) => {
