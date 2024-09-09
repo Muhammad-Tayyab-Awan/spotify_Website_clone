@@ -15,7 +15,6 @@ async function getSongs() {
 }
 
 const playMusic = (track) => {
-  console.log(currentSong);
   currentSong.src = "/songs/" + track;
   currentSong.play();
 };
@@ -37,7 +36,7 @@ async function main() {
     document.querySelector(".songLib").querySelectorAll(".songCard")
   ).forEach((e) => {
     let songToPlay = e.querySelector(".songName");
-    songToPlay.addEventListener("click", (e) => {
+    songToPlay.parentElement().addEventListener("click", (evt) => {
       playMusic(songToPlay.innerHTML);
     });
   });
