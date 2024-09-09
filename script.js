@@ -101,6 +101,15 @@ async function getAlbum() {
   let albumsFetch = await fetch("http://127.0.0.1:5500/songs/");
   let response = await albumsFetch.text();
   console.log(response);
+  let el = document.createElement("div");
+  el.innerHTML = response;
+  let albLinks = el.getElementsByTagName("a");
+  songs = [];
+  for (let i = 0; i < songLinks.length; i++) {
+    if (songLinks[i].href.endsWith(".mp3")) {
+      songs.push(songLinks[i].href);
+    }
+  }
 }
 async function main() {
   await getSongs();
