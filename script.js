@@ -15,51 +15,6 @@ async function getSongs() {
     }
   }
   return songs;
-}
-
-function convertSecondsToTime(seconds) {
-  if (isNaN(seconds) || seconds < 0) {
-    return "00:00";
-  }
-  const minutes = Math.floor(seconds / 60);
-  const remainingSeconds = seconds % 60;
-  const paddedMinutes = String(minutes).padStart(2, "0");
-  const paddedSeconds = String(Math.floor(remainingSeconds)).padStart(2, "0");
-  return `${paddedMinutes}:${paddedSeconds}`;
-}
-
-const playMusic = (track, pause = false) => {
-  currentSong.src = `/songs/${currAlbum}/` + track;
-  currentSong.addEventListener("loadeddata", () => {
-    document.querySelector(".totalDur").innerText = convertSecondsToTime(
-      currentSong.duration
-    );
-  });
-  document.querySelector(".songsInfo").innerText = track.split(".")[0];
-  if (!pause) {
-    currentSong.play();
-    playPause.classList.remove("fa-circle-play");
-    playPause.classList.add("fa-circle-pause");
-  }
-};
-
-currentSong.addEventListener("timeupdate", () => {
-  document.querySelector(".totalDur").innerText = convertSecondsToTime(
-    currentSong.duration
-  );
-  document.querySelector(".currTime").innerText = convertSecondsToTime(
-    currentSong.currentTime
-  );
-  document.querySelector(".circle").style.left = `${
-    (currentSong.currentTime / currentSong.duration) * 100
-  }%`;
-});
-
-async function main() {
-  let songs = await getSongs();
-
-  playMusic(decodeURI(songs[0].split(`/songs/${currAlbum}/`)[1]), true);
-
   let songList = document.querySelector(".songLib");
 
   for (const song of songs) {
@@ -130,6 +85,52 @@ async function main() {
       );
     }
   });
+}
+
+function convertSecondsToTime(seconds) {
+  if (isNaN(seconds) || seconds < 0) {
+    return "00:00";
+  }
+  const minutes = Math.floor(seconds / 60);
+  const remainingSeconds = seconds % 60;
+  const paddedMinutes = String(minutes).padStart(2, "0");
+  const paddedSeconds = String(Math.floor(remainingSeconds)).padStart(2, "0");
+  return `${paddedMinutes}:${paddedSeconds}`;
+}
+
+const playMusic = (track, pause = false) => {
+  currentSong.src = `/songs/${currAlbum}/` + track;
+  currentSong.addEventListener("loadeddata", () => {
+    document.querySelector(".totalDur").innerText = convertSecondsToTime(
+      currentSong.duration
+    );
+  });
+  document.querySelector(".songsInfo").innerText = track.split(".")[0];
+  if (!pause) {
+    currentSong.play();
+    playPause.classList.remove("fa-circle-play");
+    playPause.classList.add("fa-circle-pause");
+  }
+};
+
+currentSong.addEventListener("timeupdate", () => {
+  document.querySelector(".totalDur").innerText = convertSecondsToTime(
+    currentSong.duration
+  );
+  document.querySelector(".currTime").innerText = convertSecondsToTime(
+    currentSong.currentTime
+  );
+  document.querySelector(".circle").style.left = `${
+    (currentSong.currentTime / currentSong.duration) * 100
+  }%`;
+});
+
+async function main() {
+  let songs = await getSongs();
+
+  playMusic(decodeURI(songs[0].split(`/songs/${currAlbum}/`)[1]), true);
+
+  
 
   let albumCards = document.querySelectorAll(".card");
 
