@@ -8,13 +8,13 @@ async function getSongs() {
   let el = document.createElement("div");
   el.innerHTML = response;
   let songLinks = el.getElementsByTagName("a");
-  let songs = [];
+  songs = [];
   for (let i = 0; i < songLinks.length; i++) {
     if (songLinks[i].href.endsWith(".mp3")) {
       songs.push(songLinks[i].href);
     }
   }
-  
+
   playMusic(decodeURI(songs[0].split(`/songs/${currAlbum}/`)[1]), true);
 
   let songList = document.querySelector(".songLib");
