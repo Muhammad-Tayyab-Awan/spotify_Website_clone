@@ -18,6 +18,7 @@ async function getSongs() {
 const playMusic = (track) => {
   currentSong.src = "/songs/" + track;
   currentSong.play();
+  document.querySelector(".songsInfo").innerText = track.split(".")[0];
   playPause.classList.remove("fa-circle-play");
   playPause.classList.add("fa-circle-pause");
 };
@@ -40,8 +41,6 @@ async function main() {
   ).forEach((e) => {
     let songToPlay = e.querySelector(".songName");
     songToPlay.parentElement.addEventListener("click", (evt) => {
-      document.querySelector(".songsInfo").innerText =
-        songToPlay.innerHTML.split(".")[0];
       playMusic(songToPlay.innerHTML);
     });
   });
