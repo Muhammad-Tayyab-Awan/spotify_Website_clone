@@ -2,7 +2,6 @@ let currentSong = new Audio();
 let playPause = document.querySelector(".play");
 let currAlbum = "me";
 
-
 async function getSongs() {
   let fetchSongs = await fetch(`http://localhost:5500/songs/${currAlbum}/`);
   let response = await fetchSongs.text();
@@ -29,9 +28,6 @@ function convertSecondsToTime(seconds) {
   return `${paddedMinutes}:${paddedSeconds}`;
 }
 
-
-
-
 const playMusic = (track, pause = false) => {
   currentSong.src = `/songs/${currAlbum}/` + track;
   currentSong.addEventListener("loadeddata", () => {
@@ -47,12 +43,7 @@ const playMusic = (track, pause = false) => {
   }
 };
 
-
-
-
 async function main() {
-
-
   currentSong.addEventListener("timeupdate", () => {
     document.querySelector(".totalDur").innerText = convertSecondsToTime(
       currentSong.duration
@@ -65,14 +56,12 @@ async function main() {
     }%`;
   });
 
-
-
   let songs = await getSongs();
-  
+
   playMusic(decodeURI(songs[0].split(`/songs/${currAlbum}/`)[1]), true);
-  
+
   let songList = document.querySelector(".songLib");
-  
+
   for (const song of songs) {
     let songItem = document.createElement("div");
     songItem.classList.add("songCard");
@@ -84,7 +73,6 @@ async function main() {
     songList.append(songItem);
   }
 
-
   Array.from(
     document.querySelector(".songLib").querySelectorAll(".songCard")
   ).forEach((e) => {
@@ -94,7 +82,6 @@ async function main() {
     });
   });
 
-  
   playPause.addEventListener("click", (evt) => {
     if (currentSong.paused) {
       currentSong.play();
@@ -106,14 +93,18 @@ async function main() {
       playPause.classList.remove("fa-circle-pause");
     }
   });
+
   let seekBar = document.querySelector(".seekBar");
+
   seekBar.addEventListener("click", (evt) => {
     const elem = seekBar.getBoundingClientRect();
     let x = ((evt.clientX - elem.left) / elem.width) * 100;
     currentSong.currentTime = (x * currentSong.duration) / 100;
     document.querySelector(".circle").style.left = `${x.toFixed(2)}%`;
   });
+
   let nextSong = document.querySelector(".next");
+
   nextSong.addEventListener("click", (evt) => {
     if (songs.indexOf(currentSong.src) + 1 < songs.length) {
       playMusic(
@@ -125,7 +116,9 @@ async function main() {
       );
     }
   });
+
   let prevSong = document.querySelector(".prev");
+
   prevSong.addEventListener("click", (evt) => {
     if (songs.indexOf(currentSong.src) - 1 >= 0) {
       playMusic(
@@ -137,7 +130,9 @@ async function main() {
       );
     }
   });
+
   let albumCards = document.querySelectorAll(".card");
+
   albumCards.forEach((e) => {
     e.addEventListener("click", async (evt) => {
       console.log(evt.currentTarget.dataset.album);
@@ -146,4 +141,5 @@ async function main() {
     });
   });
 }
+
 main();
