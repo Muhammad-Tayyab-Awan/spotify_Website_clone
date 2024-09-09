@@ -1,7 +1,7 @@
 let currentSong = new Audio();
 let playPause = document.querySelector(".play");
 let currAlbum = "me";
-
+let songs = [];
 async function getSongs() {
   let fetchSongs = await fetch(`http://localhost:5500/songs/${currAlbum}/`);
   let response = await fetchSongs.text();
@@ -127,7 +127,7 @@ currentSong.addEventListener("timeupdate", () => {
 
 async function main() {
   await getSongs();
-  
+
   playMusic(decodeURI(songs[0].split(`/songs/${currAlbum}/`)[1]), true);
 
   let albumCards = document.querySelectorAll(".card");
