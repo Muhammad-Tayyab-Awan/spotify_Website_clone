@@ -80,5 +80,7 @@ async function main() {
       playPause.classList.remove("fa-circle-pause");
     }
   });
+  let seekBar = document.querySelector(".seekBar");
+  seekBar.addEventListener()
 }
 main();
