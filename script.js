@@ -16,6 +16,9 @@ async function getSongs() {
 }
 
 function convertSecondsToTime(seconds) {
+  if (isNaN(seconds) || seconds < 0) {
+    return "00:00";
+  }
   const minutes = Math.floor(seconds / 60);
   const remainingSeconds = seconds % 60;
   const paddedMinutes = String(minutes).padStart(2, "0");
