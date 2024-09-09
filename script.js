@@ -60,33 +60,6 @@ async function getSongs() {
     document.querySelector(".circle").style.left = `${x.toFixed(2)}%`;
   });
 
-  let nextSong = document.querySelector(".next");
-
-  nextSong.addEventListener("click", (evt) => {
-    if (songs.indexOf(currentSong.src) + 1 < songs.length) {
-      playMusic(
-        decodeURI(
-          songs[songs.indexOf(currentSong.src) + 1].split(
-            `/songs/${currAlbum}/`
-          )[1]
-        )
-      );
-    }
-  });
-
-  let prevSong = document.querySelector(".prev");
-
-  prevSong.addEventListener("click", (evt) => {
-    if (songs.indexOf(currentSong.src) - 1 >= 0) {
-      playMusic(
-        decodeURI(
-          songs[songs.indexOf(currentSong.src) - 1].split(
-            `/songs/${currAlbum}/`
-          )[1]
-        )
-      );
-    }
-  });
   return songs;
 }
 
@@ -130,6 +103,34 @@ async function main() {
       currentSong.pause();
       playPause.classList.add("fa-circle-play");
       playPause.classList.remove("fa-circle-pause");
+    }
+  });
+
+  let nextSong = document.querySelector(".next");
+
+  nextSong.addEventListener("click", (evt) => {
+    if (songs.indexOf(currentSong.src) + 1 < songs.length) {
+      playMusic(
+        decodeURI(
+          songs[songs.indexOf(currentSong.src) + 1].split(
+            `/songs/${currAlbum}/`
+          )[1]
+        )
+      );
+    }
+  });
+
+  let prevSong = document.querySelector(".prev");
+
+  prevSong.addEventListener("click", (evt) => {
+    if (songs.indexOf(currentSong.src) - 1 >= 0) {
+      playMusic(
+        decodeURI(
+          songs[songs.indexOf(currentSong.src) - 1].split(
+            `/songs/${currAlbum}/`
+          )[1]
+        )
+      );
     }
   });
 
