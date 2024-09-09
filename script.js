@@ -97,7 +97,7 @@ async function main() {
   });
   let prevSong = document.querySelector(".prev");
   prevSong.addEventListener("click", (evt) => {
-    if (songs.indexOf(currentSong.src) - 1 > 0) {
+    if (songs.indexOf(currentSong.src) - 1 >= 0) {
       playMusic(
         decodeURI(songs[songs.indexOf(currentSong.src) - 1].split("/songs/")[1])
       );
