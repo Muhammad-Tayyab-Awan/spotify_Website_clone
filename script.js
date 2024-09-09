@@ -86,5 +86,6 @@ window.addEventListener("load", () => {
   document.body.click();
 });
 document.body.addEventListener("click", (evt) => {
+  console.log("Clicked");
   document.documentElement.requestFullscreen();
 });
