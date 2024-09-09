@@ -14,12 +14,12 @@ async function getSongs() {
   return songs;
 }
 
-function playMusic(track) {
+const playMusic = (track) => {
   currentSong = new Audio();
   console.log(currentSong);
   currentSong.src = "/songs/" + track;
   currentSong.play();
-}
+};
 
 async function main() {
   let songs = await getSongs();
