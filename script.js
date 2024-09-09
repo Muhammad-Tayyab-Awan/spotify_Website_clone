@@ -127,8 +127,9 @@ async function main() {
     let albumCard = document.createElement("div");
     albumCard.classList.add("card");
     albumCard.setAttribute("data-album", `${e}`);
-    albumCard.innerHTML = `<img src="/songs/${e}/cover.jpg" alt="${e}" />
+    albumCard.innerHTML = `<div><img src="/songs/${e}/cover.jpg" alt="${e}" />
               <i class="fa-solid fa-circle-play"></i>
+              </div>
               <p>${albums.albumsData[i].description}</p>`;
     albumContainer.append(albumCard);
   });
