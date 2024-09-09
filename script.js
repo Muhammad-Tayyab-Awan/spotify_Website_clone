@@ -28,7 +28,7 @@ function convertSecondsToTime(seconds) {
 }
 
 const playMusic = (track, pause = false) => {
-  currentSong.src = "/songs/" + track;
+  currentSong.src = `/songs/${currAlbum}/` + track;
   currentSong.addEventListener("loadeddata", () => {
     document.querySelector(".totalDur").innerText = convertSecondsToTime(
       currentSong.duration
