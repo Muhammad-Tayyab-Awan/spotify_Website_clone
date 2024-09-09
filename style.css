@@ -173,7 +173,7 @@ body {
   height: 90%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: flex-start;
   flex-wrap: wrap;
   row-gap: 0.5rem;
   overflow: hidden auto;
