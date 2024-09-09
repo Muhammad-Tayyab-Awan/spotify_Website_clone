@@ -98,7 +98,7 @@ const playMusic = (track, pause = false) => {
 };
 
 async function getAlbum() {
-  let albumsFetch = await fetch("http:localhost:5500/songs/");
+  let albumsFetch = await fetch("http://localhost:5500/songs/");
   let response = await albumsFetch.json();
   console.log(response);
 }
