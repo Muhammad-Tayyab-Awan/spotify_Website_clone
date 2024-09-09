@@ -320,6 +320,9 @@ body {
   height: 4px;
   background-color: #474444;
 }
+.songsInfo{
+  
+}
 .seekBar .circle {
   position: absolute;
   width: 10px;
