@@ -275,7 +275,7 @@ function convertSecondsToTime(seconds) {
 
 const playMusic = (track, pause = false) => {
   console.log(track);
-  currentSong.src = `${window.location.origin}/songs/${currAlbum}/` + track;
+  currentSong.src = track;
   console.log(`${window.location.origin}/songs/${currAlbum}/` + track);
   currentSong.addEventListener("loadeddata", () => {
     document.querySelector(".totalDur").innerText = convertSecondsToTime(
