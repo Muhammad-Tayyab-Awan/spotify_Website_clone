@@ -55,13 +55,13 @@ async function main() {
     }%`;
   });
   let songs = await getSongs();
-  playMusic(decodeURI(songs[0].split("/songs/")[1]), true);
+  playMusic(decodeURI(songs[0].split(`/songs/${currAlbum}/`)[1]), true);
   let songList = document.querySelector(".songLib");
   for (const song of songs) {
     let songItem = document.createElement("div");
     songItem.classList.add("songCard");
     songItem.innerHTML = `<i class="fa-solid fa-music"></i>
-              <p class="songName">${decodeURI(song.split("/songs/")[1])}</p>
+              <p class="songName">${decodeURI(song.split(`/songs/${currAlbum}/`)[1])}</p>
               <p class="playNow"><i class="fa-solid fa-circle-play"></i></p>`;
     songList.append(songItem);
   }
