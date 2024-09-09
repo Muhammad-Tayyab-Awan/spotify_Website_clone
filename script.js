@@ -34,7 +34,9 @@ const playMusic = (track) => {
     document.querySelector(".currTime").innerText = convertSecondsToTime(
       currentSong.currentTime
     );
-    document.querySelector(".circle").s
+    document.querySelector(".circle").style.left = `${
+      (currentSong.currentTime / currentSong.duration) * 100
+    }`;
   });
   playPause.classList.remove("fa-circle-play");
   playPause.classList.add("fa-circle-pause");
