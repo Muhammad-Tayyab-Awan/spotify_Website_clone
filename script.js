@@ -82,6 +82,7 @@ async function main() {
   });
   let seekBar = document.querySelector(".seekBar");
   seekBar.addEventListener("click", (evt) => {
+    const rect = seekBar.getBoundingClientRect();
     console.log(evt.x, "+", evt.y);
   });
 }
