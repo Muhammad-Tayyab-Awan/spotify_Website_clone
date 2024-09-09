@@ -310,18 +310,17 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: red;
 }
 .playBarBtns > * {
   cursor: pointer;
 }
 .songsTime {
-  background-color: yellow;
   height: 25%;
   width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
 }
 .seekBar {
   position: relative;
@@ -330,7 +329,6 @@ body {
   background-color: #474444;
 }
 .songsInfo {
-  background-color: blue;
   font-size: large;
   height: 41%;
   width: 90%;
