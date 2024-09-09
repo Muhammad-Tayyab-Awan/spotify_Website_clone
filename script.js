@@ -1,6 +1,6 @@
 let currentSong = new Audio();
 let playPause = document.querySelector(".play");
-let currAlbum = "01";
+let currAlbum = "a01";
 let songs = [];
 async function getSongs() {
   let fetchSongs = await fetch(`http://localhost:5500/songs/${currAlbum}/`);
