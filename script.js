@@ -20,7 +20,9 @@ const playMusic = (track) => {
   currentSong.play();
   document.querySelector(".songsInfo").innerText = track.split(".")[0];
   // document.querySelector(".totalDur").innerText = currentSong.duration;
-  console.log(currentSong.duration);
+  currentSong.addEventListener("timeupdate", () => {
+    console.log(currentSong.duration);
+  });
   playPause.classList.remove("fa-circle-play");
   playPause.classList.add("fa-circle-pause");
 };
