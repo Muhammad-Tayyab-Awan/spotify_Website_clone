@@ -25,9 +25,9 @@ function convertSecondsToTime(seconds) {
 
 const playMusic = (track, pause = false) => {
   currentSong.src = "/songs/" + track;
+  document.querySelector(".songsInfo").innerText = track.split(".")[0];
   if (!pause) {
     currentSong.play();
-    document.querySelector(".songsInfo").innerText = track.split(".")[0];
     playPause.classList.remove("fa-circle-play");
     playPause.classList.add("fa-circle-pause");
   }
