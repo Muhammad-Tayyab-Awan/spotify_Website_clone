@@ -15,7 +15,7 @@ async function getSongs() {
     }
   }
   let songList = document.querySelector(".songLib");
-
+  songList.innerHTML = "";
   for (const song of songs) {
     let songItem = document.createElement("div");
     songItem.classList.add("songCard");
