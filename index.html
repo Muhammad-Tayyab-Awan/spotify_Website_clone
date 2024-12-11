@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="uitils.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Spotify – Web Player</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo"><img src="logo.svg" alt="Spotify Logo" /></div>
+      <div class="home-search">
+        <div class="home"><img src="images/home.svg" alt="Home Logo" /></div>
+        <div class="search">
+          <label for="search"
+            ><img src="images/search.svg" alt="Search Logo" /></label
+          ><input
+            type="text"
+            id="search"
+            placeholder="What do you want to play?"
+          />
+        </div>
+      </div>
+      <div class="account_btns">
+        <button class="login-btn">Login</button>
+        <button class="signup-btn">Sign Up</button>
+      </div>
+    </div>
+    <div class="main">
+      <div class="left">
+        <div class="libraries">
+          <div class="libraryHead">
+            <div class="libraryLogo">
+              <img src="images/libraries.svg" alt="libraries" />
+              <p>Your Libraries</p>
+            </div>
+            <div class="adNewLogo">
+              <img src="images/add.svg" alt="" />
+            </div>
+          </div>
+          <div class="songLib"></div>
+        </div>
+        <div class="left-footer">
+          <div>
+            <a
+              href="https://www.spotify.com/pk-en/legal/"
+              id=""
+              data-encore-id="textLink"
+            >
+              <span data-encore-id="type">Legal</span>
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.spotify.com/pk-en/safetyandprivacy/"
+              id=""
+              data-encore-id="textLink"
+            >
+              <span data-encore-id="type">Safety &amp; Privacy Center</span>
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.spotify.com/pk-en/legal/privacy-policy/"
+              id=""
+              data-encore-id="textLink"
+            >
+              <span data-encore-id="type">Privacy Policy</span>
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.spotify.com/pk-en/legal/cookies-policy/"
+              id=""
+              data-encore-id="textLink"
+            >
+              <span data-encore-id="type">Cookies</span>
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.spotify.com/pk-en/legal/privacy-policy/#s3"
+              id=""
+              data-encore-id="textLink"
+            >
+              <span data-encore-id="type">About Ads</span>
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.spotify.com/pk-en/accessibility/"
+              id=""
+              data-encore-id="textLink"
+            >
+              <span data-encore-id="type">Accessibility</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="spotifyPlaylists">
+          <h1>Spotify Playlists</h1>
+          <div class="cardContainer"></div>
+        </div>
+        <div class="playBar">
+          <div class="songsInfo"></div>
+          <div class="playBarBtns">
+            <i class="fa-solid fa-shuffle"></i>
+            <i class="fa-solid fa-backward-step prev"></i>
+            <i class="fa-solid fa-circle-play play"></i>
+            <i class="fa-solid fa-forward-step next"></i>
+            <i class="fa-solid fa-repeat"></i>
+          </div>
+          <div class="songsTime">
+            <div class="currTime">00:00</div>
+            <div class="seekBar">
+              <div class="circle"></div>
+            </div>
+            <div class="totalDur">00:00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+.df {
+  display: flex;
+}
+.jc {
+  justify-content: center;
+}
+.ic {
+  align-items: center;
+}
+.je {
+  justify-content: space-evenly;
+}
+.ja {
+  justify-content: space-around;
+}
+.jb {
+  justify-content: space-between;
+}
